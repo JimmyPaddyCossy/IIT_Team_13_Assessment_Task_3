@@ -4,12 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testing</title>
-     <link type="text/css" rel="stylesheet" href="Nav2.css">
+    <link type="text/css" rel="stylesheet" href="Nav2.css">
     <link type="text/css" rel="stylesheet" href="testing.css">
+    <style> 
+    h1 {text-align: center;}
+    h3 {text-align: center;}
+    </style>
+    <script src="testing.js"></script>
+    <link type="text/css" rel="stylesheet" href="testing.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <h1>Testing Page</h1>
+    
            <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content"> 
@@ -28,6 +35,75 @@
         </div>
         </div>
          <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+         <br>
+
+         <br>
+
+         <img id="header" src="Images/Testing.png" class="center"><br>
+
+         <button class="tablink" onclick="openPage('UnitTesting', this, '#99ff33')" id="defaultOpen">Unit Testing</button>
+         <button class="tablink" onclick="openPage('APITesting', this, '#99ff33')">API Testing</button>
+         <button class="tablink" onclick="openPage('QATesting', this, '#99ff33')">QA Testing</button>
+         <button class="tablink" onclick="openPage('UATesting', this, '#99ff33')">UA Testing</button>
+         <button class="tablink" onclick="openPage('PerformanceTesting', this, '#99ff33')">Performance Testing</button>
+         <button class="tablink" onclick="openPage('BetaTesting', this, '#99ff33')">Beta Testing</button>
+ 
+         <div id="UnitTesting" class="tabcontent">
+            <h3>Unit Testing</h3>
+            <p>For the web application, to help elevate bugs and ensure quality, Unit testing should be performed to help isolate each part of the program and show that individual parts of the code are correct. In addition, Unit Testing will lessen the time taken for User Acceptance testing as bugs will be alleviated. Test Driven Development cycle should be taken into consideration for the basic web application however, this approach will be tricky when testing the game GUI. 
+
+                Visual Studios code has a test harness built in which will be good for testing the web platform in addition Unity has a built in test harness Unity Test Framework (UTF). 
+                
+                Unit Testing will be the reasonability of the Developer writing the code and care should be taken to adhere to any acceptance criteria. </p>
+         </div>
+ 
+         <div id="APITesting" class="tabcontent">
+            <h3>API Testing</h3>
+            <p>The Azure DevOps Bords use a REST API.  To Determine if we are hitting the URL correctly and retrieving the relevant Metadata from the DevOps Kanban API a tool such as Postman should be used be used for testing the various request and response methods such as GET, POST etc. Unit Testing all back-end code in the data layer to the Data base should also be performed in isolation.  
+
+                API Testing will need to be in accordance with a test plan and all metadata is thrown back to the database and clearly presented in the ToDoTopia Web application.  
+                
+                This testing will be done by the API Developers at the time of development.</p>
+         </div>
+ 
+         <div id="QATesting" class="tabcontent">
+            <h3>Quality Assurance Testing</h3>
+            <p>It would be Prudent to use a QA approach to testing the game (and all other aspects to the ToDoTopia platform) This will generally be manually testing the game for Bugs and is not so much concerned with gameplay. QA testing will be the ability to play a 1v1 game uninterrupted by Bugs so APIs will need to be tested by the QA team to ensure functionality is working in accordance with the Game and the ToDoTopia Web Platform.  The QA team should consist of 2 or more testers at this point.</p>
+         </div>
+ 
+         <div id="UATesting" class="tabcontent">
+            <h3>User Acceptance Testing</h3>
+            <p>Playtesting the ToDoTopia games in Focus Groups from various Demographics will be important to understand the flow of the game. Considering that ToDoTopia is gamification of WIP and ultimately not restricted to software Development Teams, it would be advisable to Playtest the game with people from varied industry roles.    
+
+                User Acceptance testing will need to be signed off by all parties in accordance with an exhaustive test plan.  Success will see API integration to the ToDoTopia game, and the following will need to be observed. We should aim for about 100 people testing the platform and game at this point.  </p>
+            <ul>
+                <li>Story points will be thrown back to the Data base at a particular point in the WIP lifecycle e.g., when a Task reaches the done column and a sprint end.  </li>
+                <li>Correct conversion of Story points to XP can be seen in the UI</li>
+                <li>Users can see their details in the UI, Build armies etc. </li>
+                <li>1v1 player game can be observed with users’ armies clearly represented on the terrain map</li>
+                <li>Game play is uninterrupted  </li>
+                <li>Administrator roles can be defined and used  </li>
+                <li>Many uses can be seen in the Web app </li>
+                <li>Game can be played by multiple users</li>
+                
+                </ul>  
+        </div>
+
+         
+         <div id="PerformanceTesting" class="tabcontent">
+            <h3>Load and performance Testing</h3>
+            <p>Load / stress tests on the application and servers will be required so that we can understand the impact of many games being played at once. This could be as simple as running several games at once and allowing many uses on to the platform to using specific load testing tools such as LoadNinja or Load Forge should be used.</p>
+         </div>         
+
+         <div id="BetaTesting" class="tabcontent">
+            <h3>Beta Testing</h3>
+            <p>As we are developing using Azure DevOps Boards, we will need to look for a company using this software willing to Beta test this.  
+
+                Integration to our platform will be needed. However, this may be out of Scope for this part of the project and only once we have the game working in full (16 weeks) should we focus on Beta testing.   
+                
+                There should be as many people as possible testing this and reporting back but a mid to large size company with a good size development team would be advisable. </p>
+         </div>         
+    
     
     <script src="Nav2.js"></script>
 </body>
