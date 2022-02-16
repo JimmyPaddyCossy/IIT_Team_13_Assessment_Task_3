@@ -1,7 +1,144 @@
 body {
-    background: #333;
     color: white;
     font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
     background-image: url(Images/brickworkBackground.jpg);
+    text-shadow: 2px 2px black;
+}
+
+#header {
+    max-width: 60%;
+    margin-left: 20em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    opacity: 85%;
 
 }
+
+footer {
+    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-left: 40%;
+}
+
+.copy {
+    display: inline-flex;
+    opacity: 70%;
+}
+
+.fundamentalAspects {
+    background-color: rgb(0, 0, 0, 0.5);
+    margin: 0 auto;
+    width: 50%;
+    padding: 1em;
+    border: #ff64b4 solid .2em;
+    font-size: 1.5em;
+    margin-bottom: 2em;
+}
+
+.fundamentalAspects ol {
+    display: table;
+    margin: 0 auto;
+}
+
+.fundamentalAspects p {
+    text-align: center;
+}
+
+.Game,
+.webApi,
+.futureScope {
+    background-color: rgb(0, 0, 0, 0.5);
+    margin: 0 auto;
+    width: 50%;
+    padding: 1em;
+    border: #ff64b4 solid .2em;
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+.webApi img {
+    width: 100%;
+    border: #ff64b4 solid .1em;
+    box-shadow: 6px 6px black;
+}
+
+.accordion {
+    background-color: #333;
+    color: #ff64b4;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid #ff64b4;
+    text-align: left;
+    outline: none;
+    font-size: 1.5em;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #333;
+    border-color: #99ff33;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #ff64b4;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: .5em;
+}
+
+
+/*-------------------------------------MEDIA--------------------------------------------*/
+
+@media all and (max-width: 600px) {
+
+    /*----------Header--------*/
+    #header {
+        margin-left: 20%;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .fundamentalAspects, .Game,.webApi,
+    .futureScope {
+        font-size: 1.0em;
+        font-weight: 600;
+    }
+    
+    footer{
+        margin-left: 20%;
+    }
+
+    .zoom {               
+        transition: transform 0.5s;
+      }
+      
+      .zoom:hover {
+        -ms-transform: scale(2); /* IE 9 */
+        -webkit-transform: scale(2); /* Safari 3-8 */
+        transform: scale(2.5);
+      }
+
+      .webApi img {  
+          border:none;     
+        box-shadow: none;
+    }
+
+}
+
+/*end 600 width*/
