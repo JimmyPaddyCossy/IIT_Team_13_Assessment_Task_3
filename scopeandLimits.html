@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,15 @@
 </head>
 
 <body>
-    
-    <h1>Scope and Limits Page</h1>
-    
-             <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content"> 
+
+
+
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
             <a id="home" href="index.html">Main Home Page</a>
-            <a  href="Assignment-3.html">Assignment-3 Home Page</a>
+            <a href="Assignment-3.html">Assignment-3 Home Page</a>
             <a id="group" href="groupProcesses.html">Group Processes</a>
             <a id="career" href="careerPlans.html">Career Plans</a>
             <a id="projectDescription" href="projectDescription.html">Project Description</a>
@@ -24,14 +26,125 @@
             <a id="scope" href="scopeandLimits.html">Scope and Limits</a>
             <a id="toolstech" href="toolsandTech.html">Tools and Technologiess</a>
             <a id="testing" href="testing.html">Testing</a>
-            <a id="timeframe" href="timeFrame.html">Timeframe</a>           
+            <a id="timeframe" href="timeFrame.html">Timeframe</a>
             <a id="risks" href="risks.html">Risks</a>
             <a id="skilljob" href="skillsandjobs.html">Skills and Jobs</a>
         </div>
-        </div>
-         <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    
+    </div>
+    <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
     <script src="Nav2.js"></script>
-    
+
+    <header><img id="header" src="Images/ScopeandLimits.png"></header>
+
+    <section class="fundamentalAspects">
+        <p>There are two fundamental aspects of ToDoTopia that are required to for a minimum viable product (MVP).</p>
+        <ol>
+            <li> Completion of a rudimentary game engine that can show case the basis of:
+                <ol>
+                    <li>Game play of the computer game </li>
+                    <li>Cloud based Web application used for hosting the game</li>
+                </ol>
+            </li>
+            <li>API connection between work in progress (WIP) application and ToDoTopia. For a MVP to be completed the
+                following Scope and limits will need to be adhered to. </li>
+        </ol>
+    </section>
+
+    <button class="accordion">Game</button>
+    <div class="panel">
+        <div class="Game">
+            <p>ToDoTopia is a games platform and will ultimately have the potential to host many games. However, it is
+                important that for the sake of Scope that we limit the development for now, to just one game.
+                Additionally due to time constraints the game should be limited in its functionality until the API and
+                Web platform have been developed to MVP.
+                <br> is proposed that the game be limited to:
+            </p>
+            <ul>
+                <li>1v1 player</li>
+                <li>One Game Map </li>
+                <li>Limited number of units in the game
+                    <ul>
+                        <li>Infantry unit</li>
+                        <li>Tank unit</li>
+                        <li>Commando unit</li>
+                        <li>Scout unit</li>
+                    </ul>
+                </li>
+                <li>Units that survive a battle can be used in the next Game however, players will need to expend XP to
+                    repair battle damage units before the next battle. </li>
+            </ul>
+            <p>It's temping to develop the game further as this is the “fun” part of what Team Thirteen is doing but
+                we need to be able to show a product that works in a short space of time. Further iterations could
+                greatly develop the game to include more units 2v2 and 3v3 player, new maps and units that survive
+                the battle can gain experience (e.g., More resilient, better weapons etc). However, for the sake of
+                MVP and eliminating scope creep the game play will be limited to the above. </p>
+
+        </div>
+    </div>
+
+
+    <button class="accordion">Web application and API link: </button>
+    <div class="panel">
+        <div class="webApi">
+            <p>It is proposed that the ToDoTopia cloud-based web platform be limited to: </p>
+            <ul>
+                <li>Administration area for mangers</li>
+                <li>User Area </li>
+                <li>Army Builder</li>
+                <li>Users Army (show current units and unit health and cost to repair a battle worn unit to full health)
+                </li>
+                <li>Leader Board (this could be taken out if time is limited)</li>
+                <li>Story Point Conversion (sp to xp)</li>
+            </ul>
+            <p>It is proposed that the API connection be limited to one application, Microsoft’s Azure DevOps, using
+                their Kanban Board.
+                We will need to be able to configure the Jira story cards/tasks to that the story points correlate
+                to the number of Xp points in the game. Looking at Azure Documentation it seems the API JSON will
+                allow story points to come through <a
+                    href="https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work-items/get-work-items-batch?view=azure-devops-rest-6.0">here</a>
+            </p>
+            <div class="zoom">
+            <img  id="storyPoints" src="Images/storypoints.PNG"></div>
+            <p>This should allow us to isolate the story pints to convert to Xp for the game. There is a lot of metadata
+                that we could pull though from the API but for the sake of MVP it is prudent to limit development to the
+                story points, however it might be prudent to develop the data base to include all the metadata for
+                future use. At this point displaying the Xp in the Kanban Board world require permissions and extra work
+                which is not necessary as Xp can be viewed in the ToDoTopia Web UI. Additionally, calculation of Xp will
+                need to be done in the TodoTopia backend logic.</p>
+
+        </div>
+    </div>
+
+    <button class="accordion">Future Scope</button>
+    <div class="panel">
+        <div class="futureScope">
+            <p>Some of the elements of the future scope of the game have already been pointed out with various game
+                upgrades and perhaps rolling out several games’ players can choose from. It is important to point out
+                that the ToDoTopia platform could be developed further to include:
+            </p>
+            <ul>
+                <li>employee metrics so that managers can better assess teams and individuals</li>
+                <li>rewards points, connection to frequent flyer points, Woolworths rewards or flybys would further
+                    incentivise employees with respect to WIP. Not only could Xp be exchanged for buying units bit there
+                    could also be an exchange for rewards points. Additionally, Rewards points could be given as prizes
+                    in the game for winners of battle rounds or leader board positions. Further incentivising WIP.</li>
+            </ul>
+            <p>For now, these are out of scope as the focus is limited to getting the platform working. However, with
+                the correct approach Rewards pints could be added provided the relevant API’s are available. </p>
+
+        </div>
+    </div>
+     <script src="scopeandLimits.js"></script>
+
+
+
+    <footer>
+        <div class="copy">
+            <p>&copy;</p><img src="Images/JimmyTag2.png">
+        </div>
+    </footer>
+
 </body>
+
 </html>
