@@ -5,3 +5,184 @@ body {
     background-image: url(Images/brickworkBackground.jpg);
 
 }
+
+
+/*------ Generic Table styling-----*/
+table tr,
+th,
+td {
+    overflow-x: auto;
+    border: 0.1em solid #ff64b4;
+    
+}
+
+td {
+
+    padding: 1em;
+}
+
+th {
+    
+    color: #00ff00;
+    font-size: 2em;
+    
+}
+
+/*------------PageFont----------*/
+
+.mainPageParagraph {
+    
+
+    font-size: 2em;
+    text-align: center;
+    
+}
+
+.commonElements {
+    
+ text-align: center;
+    font-size: 2em;
+    
+}
+
+.headings {
+    
+    color: #00ff00;
+    font-size: 2em;
+    text-align: center
+    
+}
+
+/*----------Header--------*/
+#header {
+    max-width: 60%;
+    margin-left: 30em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    opacity: 75%;
+
+}
+
+/*--------TeamProfileResults---------*/
+
+.CareerPlans{
+    display: flex;
+            
+}
+
+.CareerPlans table{
+
+    border-collapse: collapse;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 1em;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 6em;
+     
+        
+    
+    
+   
+}
+
+.CareerPlans td:nth-child(2) {
+    text-align: center;
+}
+
+/*----Accordion-----*/
+
+.accordion {
+    background-color: #333;
+    color: #ff64b4;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid #ff64b4;
+    text-align: left;
+    outline: none;
+    font-size: 1.5em;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #333;
+    border-color: #99ff33;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #ff64b4;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: .5em;
+}
+
+/* Media Queries */
+
+@media all and (max-width: 600px) {
+
+    
+    #header {
+        margin-left: 20%;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+}
+
+@media all and (min-width: 601px) and (max-width:992px) {
+    
+    
+    #header {
+        margin-left: 20%;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+}
+
+@media all and (min-width: 993px) and (max-width:1200px) {
+    
+    
+    #header {
+        margin-left: 20%;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+}
+
+@media all and (min-width: 1201px) and (max-width:1400px) {
+    
+    
+    #header {
+        margin-left: 22%;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+}
+
+@media all and (min-width: 1400px) and (max-width:1900px) {
+    
+    
+    #header {
+        margin-left: 20%;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+}
