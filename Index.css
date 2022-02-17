@@ -1,50 +1,35 @@
 body {
-
     color: white;
     font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-    height: 100%;
     margin: 0;
-
+    height: 100%;
+    background-image: url(Images/HomePageGraffitiWall.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 html {
     height: 100%;
 }
 
-.bg {
-    height: 100%;
-    background-image: url(Images/HomePageGraffitiWall.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
 #TeamThirteen {
     margin-left: 15%;
     margin-right: 15%;
-    opacity: 75%
-    
-    
-    
-   
+    margin-top: 10%;
+    opacity: 75%;
 }
 
 #TeamThirteen img {
     max-width: 100%;
-    height: auto;
-    display: block;
 }
 
 .audio {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
-}
-
-
+    margin-top: 5%;
+    opacity: 0.7;
 }
 
 .fade {
@@ -74,52 +59,30 @@ html {
     }
 }
 
-
-
-
 /*-------------------------Media Queries-------------------------*/
 
 @media all and (max-width: 600px) {
-    
-    footer {
-        margin-left: 0%;
-    }
-    
     #TeamThirteen {
-        margin-left: 15%
+        margin-top: 30%;
     }
-    
+
     .audio {
-        margin-left: 30%;
-        margin-top: 130%
+        margin-top: 15%;
     }
-        
-    
-    
-    
-        
-    
+
+    audio {
+        width: 50%;
+    }
 }
 
 @media all and (min-width: 601px) and (max-width:992px) {
-    
-    footer {
-        margin-left: 0%
+    #TeamThirteen {
+        margin-top: 20%;
+
     }
-    
-    #teamThirteen {
-        
-        margin-left: 20%;
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
-    }
-    
+
     .audio {
-        margin-left: 30%;
-        margin-top: 130%
+
+        margin-top: 5%;
     }
 }
-
-
-
-
