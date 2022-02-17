@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Description</title>
-     <link type="text/css" rel="stylesheet" href="Nav2.css">
+    <link type="text/css" rel="stylesheet" href="Nav2.css">
     <link type="text/css" rel="stylesheet" href="projectDescription.css">
 </head>
 
 <body>
-    <h1>Project Description Page</h1>
-    
-         <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content"> 
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
             <a id="home" href="index.html">Main Home Page</a>
-            <a  href="Assignment-3.html">Assignment-3 Home Page</a>
+            <a href="Assignment-3.html">Assignment-3 Home Page</a>
             <a id="group" href="groupProcesses.html">Group Processes</a>
             <a id="career" href="careerPlans.html">Career Plans</a>
             <a id="projectDescription" href="projectDescription.html">Project Description</a>
@@ -23,14 +23,548 @@
             <a id="scope" href="scopeandLimits.html">Scope and Limits</a>
             <a id="toolstech" href="toolsandTech.html">Tools and Technologiess</a>
             <a id="testing" href="testing.html">Testing</a>
-            <a id="timeframe" href="timeFrame.html">Timeframe</a>           
+            <a id="timeframe" href="timeFrame.html">Timeframe</a>
             <a id="risks" href="risks.html">Risks</a>
             <a id="skilljob" href="skillsandjobs.html">Skills and Jobs</a>
         </div>
-        </div>
-         <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    
+    </div>
+    <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
     <script src="Nav2.js"></script>
-    
+
+    <header><img id="header" src="Images/ProjDesc.png"></header>
+
+    <button class="tablink" onclick="openPage('Overview', this)" id="defaultOpen">Overview</button>
+    <button class="tablink" onclick="openPage('Desc', this)">Detailed Description</button>
+    <button class="tablink" onclick="openPage('Plans', this)">Plans and Progress</button>
+    <button class="tablink" onclick="openPage('Look', this)">What the Web App Will Look Like</button>
+    <button class="tablink" onclick="openPage('Built', this)">How the Web App will be Built</button>
+    <button class="tablink" onclick="openPage('Projectstory', this)">Project story</button>
+
+    <section>
+        <div id="Overview" class="tabcontent">
+            <h1>Overview</h1>
+            <h2>Topic</h2>
+            <p>ToDoTopia is a web-based, games platform that links into companies’ productivity tools to determine
+                in-game
+                XP. Being a web-based application allows for more flexibility as it is easier to release updates and
+                users
+                are not required to install an application on their personal computer. Our original idea was to create a
+                productivity tool that possessed gamification features, but after some research we decided to focus on
+                making a more engaging gaming experience that links into already popular productivity tools, rather than
+                focusing on building a productivity tool. Our goal for this platform is to create a more fun and
+                competitive
+                work environment by turning completed tasks into XP that can be used to buy troops, guns and other
+                equipment
+                in a real-time strategy (RTS) game. We want to encourage a time at the end of each week or sprint for
+                employees to sit down, have a drink and verse each other in a battle that is highly influenced by the
+                level
+                of productivity of each individual during that week or sprint.<br><br>
+
+                To link into productivity tools used by our customers (such as Jira and Azure DevOps) will require the
+                use
+                of an API. We will use this API to send across information related to the task such as its difficulty,
+                size
+                and who completes it. In ToDoTopia’s game, XP will be used to purchase troops, guns, tanks, etc.
+                ToDoTopia
+                will use the information received about the task to translate it to in-game XP. The task’s size will be
+                used
+                to determine how much XP the user will receive and the employee who completes the task or moves it to
+                the
+                next stage of progress will be awarded this XP. The overall outcome of this project is to create a
+                web-based
+                game’s platform that uses data from a company’s task manager (e.g., Jira or Azure DevOps) to allow
+                employees
+                to gain in-game XP by completing more tasks.
+            </p>
+            <h2>Motivation</h2>
+            <p class="motivation">Gamification of tasks is not necessarily a new idea. Companies such as <a
+                    href="https://habitica.com/static/home">Habitica</a> have been doing it for a
+                while now in a way of making your daily tasks and activities rewarding by giving you a character who
+                starts
+                at level one and has no items. The idea is that you self-appoint yourself tasks and as you complete
+                those
+                tasks you are rewarded with better equipment to help your character progress. However, these
+                applications
+                are more on an individual basis and the game play is limited. Keeping a team motivated during a project
+                can
+                be difficult, but gamification has shown to keep the attention of employees and increase their
+                productivity.
+                What is gamification? Gamification at its core is turning work into play. There is a model known as
+                <a href="https://www.youtube.com/watch?v=v5Qjuegtiyc">Octalysis</a> that explains in detail the eight
+                core drives that gamify something whether it be a task at
+                work
+                or a video game.<br><br>
+                <strong>These eight core drives are as listed below:</strong> <br><br>
+            </p>
+            <ul>
+                <li><strong>Epic Meaning and calling: </strong>“When a player believes that he is doing something
+                    greater
+                    than himself.”
+                    (Yu-kai Chou: Gamification &amp; Behavioral Design)</li>
+                <li><strong>Development and Accomplishment: </strong>“The internal drive of making progress, developing
+                    skills, and
+                    eventually overcoming challenges.” (Yu-kai Chou: Gamification &amp; Behavioral Design)</li>
+                <li><strong>Empowerment and Creativity: </strong>“When users are engaged in a creative process where
+                    they
+                    have to repeatedly
+                    figure things out and try different combinations.” (Yu-kai Chou: Gamification &amp; Behavioral
+                    Design)
+                </li>
+                <li><strong>Ownership and Possession: </strong>“Where users are motivated because they feel like they
+                    own
+                    something. When a
+                    player feels ownership, she innately wants to make what she owns better and own even more.” (Yu-kai
+                    Chou: Gamification &amp; Behavioral Design)</li>
+                <li><strong>Social Influence and Relatedness: </strong>‘’This drive incorporates all the social elements
+                    that drive people,
+                    including: mentorship, acceptance, social responses, companionship, as well as competition and envy.
+                    When you see a friend that is amazing at some skill or owns something extraordinary, you become
+                    driven
+                    to reach the same level” (Yu-kai Chou: Gamification &amp; Behavioral Design)</li>
+                <li><strong>Scarcity and Impatience: </strong>“The drive of wanting something because you can’t have it.
+                    Many games have
+                    Appointment Dynamics (come back 2 hours later to get your reward) – the fact that people can’t get
+                    something right now motivates them to think about it all day long.” (Yu-kai Chou: Gamification &amp;
+                    Behavioral Design)</li>
+                <li><strong>Unpredictability: </strong>“Generally, this is a harmless drive of wanting to find out what
+                    will
+                    happen next.
+                    If you don’t know what’s going to happen, your brain is engaged, and you think about it often. Many
+                    people watch movies or read novels because of this drive. However, this drive is also the primary
+                    factor
+                    behind gambling addiction.” (Yu-kai Chou: Gamification &amp; Behavioral Design)</li>
+                <li><strong>Loss and Avoidance: </strong>“Based upon the avoidance of something negative happening.”
+                    (Yu-kai
+                    Chou:
+                    Gamification &amp; Behavioral Design)</li>
+            </ul>
+            <div class="oct">
+                <img src="Images/octagon.png" alt="Octalysis Image">
+                <h2>Graph of Octalysis:</h2>
+                <p>Every good game consists of these eight properties, and they can be used to motivate people and keep
+                    them
+                    focused. This is the motivation for ToDoTopia, to use gamification to turn completing tasks in a
+                    Jira or
+                    Azure DevOps Kanban board into a game.</p> <br><br>
+            </div>
+            <div class="GameArticles">
+                <p>Some Articles on Gamification:</p>
+                <Ul>
+                    <li><a
+                            href="https://yukaichou.com/gamification-examples/octalysis-complete-gamification-framework/">octalysis-complete-gamification-framework</a>
+                    </li>
+                    <li><a
+                            href="https://www.gamify.com/what-is-gamification#gamification2">what-is-gamification#gamification</a>
+                    </li>
+                    <li><a
+                            href="https://www.yarno.com.au/blog/surprising-gamification-examples-overlooked/">surprising-gamification-examples-overlooked</a>
+                    </li>
+                    <li><a
+                            href="https://www.growthengineering.co.uk/definition-of-gamification/">definition-of-gamification</a>
+                    </li>
+                </Ul>
+            </div>
+            <h2>Landscape</h2>
+            <p>The idea of gamifying tasks is already out there, and applications have been made that use this. <a
+                    href="https://habitica.com/static/home">Habitica</a>
+                is a habit tracking and task management app. It gamifies completing tasks and practicing habits by
+                assigning tasks with gold. This gold is used to build up an avatar and a team can “battle” monsters by
+                completing more tasks and habits. The “battle” in Habitica, however, does not require any gameplay,
+                rather every day the monster is damaged until its health runs out.
+                Other apps such as Todoist and Forest incorporate gamification into their app designs. Todoist is a
+                well-known task manager for individuals and teams. It possesses gamification in the form of “Karma” and
+                “Karma Levels”. As tasks are complete, the user obtains “Karma”, a form of XP or points, that builds up
+                levels. Although Todoist is gamified, it doesn’t possess any true gameplay. Forest is a time-tracking
+                application built for setting a timer when working on a particular task. Its gamification is in the form
+                of an animated forest where each tree is a timer session. When a timer is completed, a tree is grown in
+                the forest, but when the timer is stopped halfway through the session a dead tree is added to the
+                forest.
+                What ToDoTopia is offering that is different from all these apps, and any other application made with a
+                similar purpose, is gameplay. ToDoTopia itself isn’t a task manager, or a Kanban board, but a web-based
+                gaming platform allowing for actual gameplay. Actual gameplay is far more engaging than adding armour to
+                an avatar or growing trees in a forest. Since our focus is on gameplay, we can create better games that
+                link into already great productivity tools.
+            </p>
+        </div>
+
+        <div id="Desc" class="tabcontent">
+            <h1>Detailed Description</h1>
+            <h2>Aims</h2>
+            <p>The aim is to build a web-based application called ToDoTopia that links into workplace productivity, work
+                in progress and time tracking applications to gamify Individual employee and team workloads. The main
+                aim is to incentivize teams, help increase productivity, and to create a productive and competitive
+                working environment. There are many goals we must work towards and achieve to fulfil our aim. The most
+                important and crucial parts of our project can be put into goals. The main goals are to create the game,
+                keeping employees motivated, where to host it and applying it to a web application. The creation of the
+                game can be split up into smaller goals such as coding it on unity and also how we create the
+                fundamentals of the game, so it provides a positive impact to the employees. These are the main goals,
+                getting these up and running is of most importance, then we can hone down onto smaller goals for example
+                fine tuning the game. </p>
+
+            <h2>Creating the game</h2>
+            <p>Creating the game is one of the biggest goals, it can be broken down into smaller goals based around the
+                model known as Octalysis. Octalysis explains in detail the eight core drives that gamify something
+                whether
+                it be a task at work or a video game. These eight core drives are, Epic Meaning and calling, Development
+                and
+                Accomplishment, Empowerment and Creativity, Ownership and Possession, Social Influence and Relatedness,
+                Scarcity and Impatience, Unpredictability and Loss and Avoidance. When creating the game our goal will
+                be to
+                include these eight properties. The goal is to create a real-time strategy game (RTS) where opponents
+                play
+                off against each other with their armies. Teams of three would be the aim, so games of 3v3, 2v2 or 1v1.
+                We
+                chose this as the thought of annihilating your co-worker(s) after a hard week of work would make for a
+                great
+                team winddown exercise on a Friday afternoon.</p>
+            <h2>Keeping employees motivated</h2>
+            <p>Another huge goal is to make sure our platform keeps employees motivated, enthused to clear workloads and
+                stay in touch with deadlines. By creating the game, we aim to provide a platform for employees to engage
+                each other in a social environment. We want the game to provide an outlet for employees to have fun,
+                which
+                will result in a better, more productive and a more connected workplace. To keep employees motivated we
+                will
+                implement an experience points system into the game. The goal is to create a system where employees will
+                gain Xp when completing tasks, depending on the size of the task determines the amount of Xp acquired.
+                Showing how much Xp a task is worth is a good idea so that employees or teams will try and smash out a
+                higher-level task to gain this Xp. Xp can be used to buy units in the game. Employees will be trying to
+                complete higher tasks as fast as possible to gain more troops than fellow employees, creating an
+                efficient
+                work environment.
+            </p>
+            <h2>Web application </h2>
+            <p>The goal is to make web application the main platform. We want to It to be a cloud-based application that
+                will host the computer game, this will be the main space for ToDoTopia. We will have to choose what to
+                host
+                It on, such as AWS, Google Cloud or Microsoft Azure. The goal is to use GameLift cloud-based game
+                servers
+                which are dedicated for multiplayer games. This will allow us to easily scale depending on how many
+                companies are going to employ the game. </p>
+
+            <h2>Do we have enough Time/Recourses?</h2>
+            <p>There will be many resources needed to complete this project, along with a lot of time. Most of the time
+                will
+                be going into the actual creation of the game, as well as where it's going to be hosted and getting our
+                name
+                out there. I think we will have enough manpower to complete the project. It will come down to if we have
+                enough funding to use the cloud services, advertising as well as if we need to employ any IT specialists
+                to
+                help with the programming of the game, as well as the data side of things. All this will take a lot of
+                time,
+                it might take longer than expected to get it all up and running as there are many major parts to the
+                project
+                that we need to get perfected. </p>
+        </div>
+
+
+        <div id="Plans" class="tabcontent">
+            <h1>Plans and Progress</h1>
+            <h2>Development of the Azure DevOps Kanban Board API</h2>
+            <p>The Azure DevOps Kanban Board provides an API in which HTTP requests can be sent and retrieved. Team
+                Thirteen proposes to use this set of requests to pull in story points for conversion in to Experience
+                pints on the ToDoTopia Platform. As you can see the Azure DevOps Kanban board below has three work Items
+                in the “Done” Column.</p>
+            <img class="Kanban" src="Images/kanban.PNG" alt="Kanban">
+            <p>Looking through the <a
+                    href="https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/?view=azure-devops-rest-6.0">Azure
+                    DevOps API documentation</a>details of work in the Kanban Board can be retrieved
+                firstly by using the <a
+                    href="https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/wiql/query-by-wiql?view=azure-devops-rest-6.0">Wiql
+                    - Query By Wiql</a> POST request to retrieve a set of I’s for the Done Tasks and
+                then the Post request <a
+                    href="https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/work-items/get-work-items-batch?view=azure-devops-rest-6.0">Work
+                    Items - Get Work Items Batch</a> POST request.</p>
+
+
+
+            <button class="accordion">Wiql - Query By Wiql: POST
+                https://dev.azure.com/{organization}/{project}/{team}/_apis/wit/wiql?api-version=6.0</button>
+            <div class="panel">
+                <div class="wiql">
+
+
+                    <p>The ID of the “Done” Task will need to be obtained first in a separate call and the
+                        values and stored so the subsequent call can get the required data.
+                        Using The Postman tool, we can see a JSON response showing the Id’s for the Done tasked
+                        retrieved based on the Work Items Query language wiql.
+                    </p>
+
+                    <table>
+                        <tr>
+                            <td>Post request</td>
+                            <td>https://dev.azure.com/S3931159/ToDoTopia/_apis/wit/wiql?api-version=6.0</td>
+                        </tr>
+                        <tr>
+                            <td>Query Data in JSON format </td>
+                            <td><code>{
+                                    "query":
+                                    "Select
+                                    [System.Id],
+                                    [System.Title],
+                                    [System.State],
+                                    [System.IterationPath]
+                                    From WorkItems
+                                    Where
+                                    [System.WorkItemType] = 'Issue'
+                                    AND [System.State] = 'Done'
+                                    AND [System.IterationPath] = @currentIteration ('[ToDoTopia]\\ToDoTopia Team')"
+                                    }</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Response </td>
+                            <td><code>{
+                                    "queryType": "flat",
+                                    "queryResultType": "workItem",
+                                    "asOf": "2022-02-11T00:44:04.077Z",
+                                    "columns": [
+                                    {
+                                    "referenceName": "System.Id",
+                                    "name": "ID",
+                                    "url": "https://dev.azure.com/S3931159/_apis/wit/fields/System.Id"
+                                    },
+                                    {
+                                    "referenceName": "System.Title",
+                                    "name": "Title",
+                                    "url": "https://dev.azure.com/S3931159/_apis/wit/fields/System.Title"
+                                    },
+                                    {
+                                    "referenceName": "System.State",
+                                    "name": "State",
+                                    "url": "https://dev.azure.com/S3931159/_apis/wit/fields/System.State"
+                                    },
+                                    {
+                                    "referenceName": "System.IterationPath",
+                                    "name": "Iteration Path",
+                                    "url": "https://dev.azure.com/S3931159/_apis/wit/fields/System.IterationPath"
+                                    }
+                                    ],
+                                    "workItems": [
+                                    {
+                                    "id": 1,
+                                    "url":
+                                    "https://dev.azure.com/S3931159/1a204fbf-67b4-4df3-a0d6-b02c5c2e6cf6/_apis/wit/workItems/1"
+                                    },
+                                    {
+                                    "id": 2,
+                                    "url":
+                                    "https://dev.azure.com/S3931159/1a204fbf-67b4-4df3-a0d6-b02c5c2e6cf6/_apis/wit/workItems/2"
+                                    },
+                                    {
+                                    "id": 4,
+                                    "url":
+                                    "https://dev.azure.com/S3931159/1a204fbf-67b4-4df3-a0d6-b02c5c2e6cf6/_apis/wit/workItems/4"
+                                    }
+                                    ]
+                                    }
+
+                                </code></td>
+                        </tr>
+                    </table>
+
+                    <p>As you can see this returns the id of tasks that are “Done” in the current sprint along with a
+                        URL for each respective work item. There are two options here we could use the URL and get the
+                        details of each work item in a separate request or store the above id in a variable and sent a
+                        POST request as below which may be the better solution.</p>
+                </div>
+            </div>
+
+            <button class="accordion">Work Items - Get Work Items Batch: POST
+                POST https://dev.azure.com/{organization}/{project}/_apis/wit/workitemsbatch?api-version=6.0</button>
+            <div class="panel">
+                <div class="wiql">
+                    <p>Once we have retrieved the Id’s for the work items will need to be passed as a parameter so that
+                        the story points are returned using the following query.</p>
+
+
+
+                    <table>
+                        <tr>
+                            <td>Post request</td>
+                            <td>https://dev.azure.com/S3931159/ToDoTopia/_apis/wit/workitemsbatch?api-version=6.0</td>
+                        </tr>
+                        <tr>
+                            <td>JSON Raw data </td>
+                            <td><code>{
+                                    "ids": [
+                                    1,
+                                    2,
+                                    4
+                                    ],
+                                    "fields": [
+                                    "System.AssignedTo",
+                                    "Microsoft.VSTS.Scheduling.StoryPoints"
+                                    ]
+                                    }
+                                </code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Response </td>
+                            <td><code>{
+                                    "count": 3,
+                                    "value": [
+                                    {
+                                    "id": 1,
+                                    "rev": 11,
+                                    "fields": {
+                                    "System.AssignedTo": {
+                                    "displayName": "Bradley Williams",
+                                    "url":
+                                    "https://spsprodeau1.vssps.visualstudio.com/A16c93c5d-2171-4a4b-88cb-c2d375c3bc98/_apis/Identities/7857fca1-7bda-6f8e-b638-25dacad71ac3",
+                                    "_links": {
+                                    "avatar": {
+                                    "href":
+                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.Nzg1N2ZjYTEtN2JkYS03ZjhlLWI2MzgtMjVkYWNhZDcxYWMz"
+                                    }
+                                    },
+                                    "id": "7857fca1-7bda-6f8e-b638-25dacad71ac3",
+                                    "uniqueName": "S3935806@student.rmit.edu.au",
+                                    "imageUrl":
+                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.Nzg1N2ZjYTEtN2JkYS03ZjhlLWI2MzgtMjVkYWNhZDcxYWMz",
+                                    "descriptor": "aad.Nzg1N2ZjYTEtN2JkYS03ZjhlLWI2MzgtMjVkYWNhZDcxYWMz"
+                                    },
+                                    "Microsoft.VSTS.Scheduling.StoryPoints": 2.0
+                                    },
+                                    "url": "https://dev.azure.com/S3931159/_apis/wit/workItems/1"
+                                    },
+                                    {
+                                    "id": 2,
+                                    "rev": 7,
+                                    "fields": {
+                                    "System.AssignedTo": {
+                                    "displayName": "James Costello",
+                                    "url":
+                                    "https://spsprodeau1.vssps.visualstudio.com/A16c93c5d-2171-4a4b-88cb-c2d375c3bc98/_apis/Identities/27ec99af-e6ad-6506-8133-d24c162a373a",
+                                    "_links": {
+                                    "avatar": {
+                                    "href":
+                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.MjdlYzk5YWYtZTZhZC03NTA2LTgxMzMtZDI0YzE2MmEzNzNh"
+                                    }
+                                    },
+                                    "id": "27ec99af-e6ad-6506-8133-d24c162a373a",
+                                    "uniqueName": "S3931159@student.rmit.edu.au",
+                                    "imageUrl":
+                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.MjdlYzk5YWYtZTZhZC03NTA2LTgxMzMtZDI0YzE2MmEzNzNh",
+                                    "descriptor": "aad.MjdlYzk5YWYtZTZhZC03NTA2LTgxMzMtZDI0YzE2MmEzNzNh"
+                                    },
+                                    "Microsoft.VSTS.Scheduling.StoryPoints": 5.0
+                                    },
+                                    "url": "https://dev.azure.com/S3931159/_apis/wit/workItems/2"
+                                    },
+                                    {
+                                    "id": 4,
+                                    "rev": 6,
+                                    "fields": {
+                                    "System.AssignedTo": {
+                                    "displayName": "Jesse Watson",
+                                    "url":
+                                    "https://spsprodeau1.vssps.visualstudio.com/A16c93c5d-2171-4a4b-88cb-c2d375c3bc98/_apis/Identities/9bec9148-791c-6284-8fc2-547bd8cd721d",
+                                    "_links": {
+                                    "avatar": {
+                                    "href":
+                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.OWJlYzkxNDgtNzkxYy03Mjg0LThmYzItNTQ3YmQ4Y2Q3MjFk"
+                                    }
+                                    },
+                                    "id": "9bec9148-791c-6284-8fc2-547bd8cd721d",
+                                    "uniqueName": "S3933489@student.rmit.edu.au",
+                                    "imageUrl":
+                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.OWJlYzkxNDgtNzkxYy03Mjg0LThmYzItNTQ3YmQ4Y2Q3MjFk",
+                                    "descriptor": "aad.OWJlYzkxNDgtNzkxYy03Mjg0LThmYzItNTQ3YmQ4Y2Q3MjFk"
+                                    },
+                                    "Microsoft.VSTS.Scheduling.StoryPoints": 3.0
+                                    },
+                                    "url": "https://dev.azure.com/S3931159/_apis/wit/workItems/4"
+                                    }
+                                    ]
+                                    }
+                                    "imageUrl":
+                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.MjdlYzk5YWYtZTZhZC03NTA2LTgxMzMtZDI0YzE2MmEzNzNh",
+                                    "descriptor": "aad.MjdlYzk5YWYtZTZhZC03NTA2LTgxMzMtZDI0YzE2MmEzNzNh"
+                                    }
+                                    },
+                                    "url": "https://dev.azure.com/S3931159/_apis/wit/workItems/4"
+                                    }
+                                    ]
+                                    }</code>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p>The name, uniqueName and ID of the person who worked on the Task can be clearly shown in the JSON
+                response. Once the story points are retrieved, we will store these in the Database alongside of
+                the user ID so we can convert to experience points.<br><br>
+
+                Hitting the API and getting the story points is one thing, we will need to give the ability for
+                the web application to call the API every time a sprint is finished. This could be a manual
+                button within the web app that send a request to the API for the story points or an automated
+                response every time a sprint is finished in the Azure DevOps Kanban Board based on the end date
+                of the sprint. The latter would be the preferred response but will need to be tested.<br><br>
+
+                Calculating the Xp based on the story points is a simple calculation, but we will need to check
+                that the Xp hasn’t been allocated to a user previously for that story. We will need to consume
+                the API data within the Web application and using MVC .net core would be a good way to do this
+                as its simple, lightweight and will allow for building and connecting to API’s.<br><br>
+
+                Additionally, we will need to build an API from the Web application to the game itself so that Xp points
+                can be consumed and used within the game. In addition, an API from the game to the ToDoTopia web
+                application will be needed to allow information from the came to be stored in the ToDoTopia database
+                such as leader board points and the cost of units in the game.<br><br>
+
+                Below is an example of the web application database this does not include the game database itself.
+            </p>
+
+            <img class="dataBase" src="Images/dataB.png" alt="Database Diagram">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <div id="Look" class="tabcontent">
+            <h3>What the Web App Will Look Like</h3>
+            <p>Who we are and what we do.</p>
+        </div>
+
+        <div id="Built" class="tabcontent">
+            <h3>How the Web App will be Built</h3>
+            <p>Who we are and what we do.</p>
+        </div>
+
+        <div id="Projectstory" class="tabcontent">
+            <h3>Project story</h3>
+            <p>Who we are and what we do.</p>
+        </div>
+
+        <script src="projectDescription.js"></script>
+
+    </section>
+    <footer>
+        <div class="copy">
+            <p>&copy;</p><img src="Images/JimmyTag2.png">
+        </div>
+    </footer>
 </body>
+
 </html>
