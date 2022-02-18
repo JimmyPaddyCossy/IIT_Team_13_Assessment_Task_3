@@ -253,6 +253,12 @@ footer {
     .accordion{
         font-size: 1em;
         word-wrap: break-word;
+        
+    }
+
+    .panel{
+        overflow: auto;
+        white-space: nowrap;
     }
 
     
@@ -314,6 +320,10 @@ footer {
         word-wrap: break-word;
     }
 
+    .panel{
+        overflow: auto;
+        white-space: nowrap;
+    }
     .tablink {
 
         padding: 5px 6px;
@@ -371,7 +381,10 @@ footer {
         font-size: 1em;
         word-wrap: break-word;
     }
-
+    .panel{
+        overflow: auto;
+        white-space: nowrap;
+    }
     .tablink {
 
         padding: 8px 10px;
