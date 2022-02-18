@@ -35,11 +35,11 @@
 
     <header><img id="header" src="Images/ProjDesc.png"></header>
 
-    <button class="tablink" onclick="openPage('Overview', this)" id="defaultOpen">Overview</button>
+    <button class="tablink" onclick="openPage('Overview', this)" >Overview</button>
     <button class="tablink" onclick="openPage('Desc', this)">Detailed Description</button>
     <button class="tablink" onclick="openPage('Plans', this)">Plans and Progress</button>
-    <button class="tablink" onclick="openPage('Look', this)">What the Web App Will Look Like</button>
-    <button class="tablink" onclick="openPage('Built', this)" >How the Web App will be Built</button>
+    <button class="tablink" onclick="openPage('Look', this)" >What the Web App Will Look Like</button>
+    <button class="tablink" onclick="openPage('Built', this)" id="defaultOpen">How the Web App will be Built</button>
     <button class="tablink" onclick="openPage('Projectstory', this)">Project story</button>
 
     <section>
@@ -266,7 +266,7 @@
                 Thirteen proposes to use this set of requests to pull in story points for conversion in to Experience
                 pints on the ToDoTopia Platform. As you can see the Azure DevOps Kanban board below has three work Items
                 in the “Done” Column.</p>
-            <img class="Kanban" src="Images/kanban.PNG" alt="Kanban">
+            <div class="zoom"><img class="Kanban" src="Images/kanban.PNG" alt="Kanban"></div>
             <p>Looking through the <a
                     href="https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/?view=azure-devops-rest-6.0">Azure
                     DevOps API documentation</a>details of work in the Kanban Board can be retrieved
@@ -517,7 +517,7 @@
                 Below is an example of the web application database this does not include the game database itself.
             </p>
 
-            <img class="dataBase" src="Images/dataB.png" alt="Database Diagram">
+            <div class="zoom"><img class="dataBase" src="Images/dataB.png" alt="Database Diagram"></div>
 
         </div>
 
@@ -635,7 +635,7 @@
                 and C#. ASP.NET Core also allows for the creation of APIs which will be needed to transmit data from the
                 web app to the games and vice versa.</p>
 
-            <img class="techMap" src="Images/.netcore.jpg" alt="TechnologyMap">
+                <div class="zoom"><img class="techMap" src="Images/.netcore.jpg" alt="TechnologyMap"></div>
 
             <h2>Connecting to Azure DevOps (and Jira) through API</h2>
             <p>ToDoTopia’s web app will constantly be ‘communicating’ with Azure DevOps in the backend on the server
