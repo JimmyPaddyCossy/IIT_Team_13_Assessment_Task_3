@@ -38,21 +38,22 @@ article {
     margin-top: 1em;
 }
 
-#graph1 {
-    margin-top: 2em;
-    height: auto;
-    max-width: 100%;
-    width: 50%;
+#page1 {
+    
+}
+
+#page2 {
+    float: right
+    
+}
+
+#page3 {
     
     
 }
 
-#graph2 {
-    margin-top: 2em;
-    float: right;
-    height: auto;
-    max-width: 100%;
-    width: 50%
+#page4 {
+    float: right 
     
 }
 
