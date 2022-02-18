@@ -39,7 +39,7 @@ h2{
 p{
     text-align: justify;
     background-size: contain;
-    padding:0.2em; 
+    padding:0.5em; 
     margin: 0.1em;
     font-size: 1.5em;
 }
@@ -58,7 +58,7 @@ p{
     color: #00ff00;
     margin-bottom: 1em;
 }
-.GameArticles ul, li{
+.GameArticles ul li {
     display: table;
     margin: 0 auto;
     margin-bottom: 1em;
@@ -93,6 +93,19 @@ img.dataBase{
     height: auto; 
     background-color: white;
 }
+
+img.techMap{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    max-width: 40%;
+    height: auto; 
+    background-color: white;
+}
+
+
+
 table{
     border-collapse: collapse;
     margin-bottom: .5em;
@@ -153,10 +166,11 @@ body, html {
   /* Style the tab content (and add height:100% for full page content) */
   .tabcontent {    
     display: none;
-    padding: 0.2em 1em;
+    padding: 1em 1em;
     height: 100%;    
     background-color: rgba(51,51,51, 0.8);
     border: #ff69b4 solid 0.1em;
+   
   }
 
 
