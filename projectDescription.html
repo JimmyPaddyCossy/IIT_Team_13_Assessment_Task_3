@@ -7,6 +7,7 @@
     <title>Project Description</title>
     <link type="text/css" rel="stylesheet" href="Nav2.css">
     <link type="text/css" rel="stylesheet" href="projectDescription.css">
+    <link type="text/css" rel="stylesheet" href="projectDescriptionform.css">
 </head>
 
 <body>
@@ -38,7 +39,7 @@
     <button class="tablink" onclick="openPage('Desc', this)">Detailed Description</button>
     <button class="tablink" onclick="openPage('Plans', this)">Plans and Progress</button>
     <button class="tablink" onclick="openPage('Look', this)">What the Web App Will Look Like</button>
-    <button class="tablink" onclick="openPage('Built', this)">How the Web App will be Built</button>
+    <button class="tablink" onclick="openPage('Built', this)" >How the Web App will be Built</button>
     <button class="tablink" onclick="openPage('Projectstory', this)">Project story</button>
 
     <section>
@@ -518,43 +519,354 @@
 
             <img class="dataBase" src="Images/dataB.png" alt="Database Diagram">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
 
         <div id="Look" class="tabcontent">
-            <h3>What the Web App Will Look Like</h3>
-            <p>Who we are and what we do.</p>
+            <h1>What the Web App Will Look Like</h1>
+            <h2>Home Page</h2>
+            <p>The web app of ToDoTopia, which will be accessed through the domain todotopia.com, is the place users
+                will set up their accounts, deal with XP, check leaderboards and open games. These games will be hosted
+                separately, but will link to the web app. The home page of ToDoTopia, once the user is signed in, will
+                display the team they are in, their recent activity in the companies chosen Work-In-Progress platform
+                (starting with Azure DevOps), their current XP, an up-to-date leaderboard for the team and company and a
+                menu that allows the user to navigate the web app. At its core, the ToDoTopia web app home page will be
+                an overview of the user’s current statistics and activity in their WIP application. Users will not be
+                able to edit or complete tasks from ToDoTopia, but will be able to view the tasks and their relevant
+                properties.</p>
+
+            <h2>Dashboard</h2>
+            <p>The dashboard will be opened from the home page of ToDoTopia’s web app via the menu and will display the
+                user’s recent activity in greater detail and the user’s current XP. In the dashboard, the user will be
+                able to assign XP to their game of choice as there will be multiple games in the future of ToDoTopia.
+                However, in the first version of ToDoTopia there will be only one game and this step of assigning XP to
+                a chosen game will be automated. When the user decides to use their XP to purchase in-game items (such
+                as troops, tanks, planes, etc.), they will be required to open the game via the games menu from the home
+                page of the web app.</p>
+
+            <h2>Leaderboard</h2>
+            <p>The home page will display the leaderboard of the user’s team. When opened, the user will be able
+                interact with leaderboard items. These items are the users and their current XP. The user will also be
+                able to filter the leaderboard by their team and company, and possibly teams in a specific department of
+                the company if the company has set up their account in such a way. IT teams will be displayed in the
+                leaderboard as well as individuals. This will allow the company to check on how teams are performing
+                against each other. The leaderboard of the web app will only be sorted with the data from the WIP Kanban
+                board and not the games. If the user would like to view how each member is performing in a game, they
+                will be required to open the games menu and click on the specific game’s leaderboard. This will display
+                the leaderboard for that game based on battles won, XP lost, etc.
+
+            </p>
+            <h2>Admin</h2>
+            <p>Admin will be a page of ToDoTopia only accessible to the team leader who created the team account. Other
+                team members will not have the option to view this page. The admin page will be where the team leader
+                can set defaults for how XP will be assigned. They will be able to enter an amount of XP per story
+                point. Some teams will use 5 story points, and others might use 10, so the web app will be developed to
+                incorporate the team’s style. An example could look like this: 1 SP (story point) = 10 XP, 2 SP = 25 XP,
+                3 SP = 50XP, 4 SP = 100 XP, and 5 SP = 200 XP. These numbers will be different for every team and can be
+                changed at any time only by the team leader.<br><br>
+                In the Admin page, the team leader will also be able to modify the cost of in-game items. The user will
+                be required to select the game, then the items in that game will be listed with the corresponding XP
+                required to purchase that item. The team leader will be able to enter a new amount per item at any time,
+                allowing for the cost of troops, tanks, planes, etc. to be based on the team’s story points style.
+            </p>
+            <div class="container">
+                <form class="form-inline">
+                    <h2>Experience points conversion</h2>
+                    <div class="conversion">
+                        <label for="Sp1">Story Points (Sp):</label>
+                        <input type="text" id="Sp1" placeholder="Enter Sp1" name="Sp1">
+                        <span class="span"> &#x3D; </span>
+                        <label for="Xp1"> Experiance Points (Xp):</label>
+                        <input type="text" id="Xp1" placeholder="Enter Xp1" name="Xp1">
+                    </div>
+                    <div class="conversion">
+                        <label for="Sp2">Story Points (Sp):</label>
+                        <input type="text" id="Sp2" placeholder="Enter Sp2" name="Sp2">
+                        <span class="span"> &#x3D; </span>
+                        <label for="Xp2"> Experiance Points (Xp):</label>
+                        <input type="text" id="Xp2" placeholder="Enter Xp2" name="Xp2">
+                    </div>
+                    <div class="conversion">
+                        <label for="Sp3">Story Points (Sp):</label>
+                        <input type="text" id="Sp3" placeholder="Enter Sp3" name="Sp3">
+                        <span class="span"> &#x3D; </span>
+                        <label for="Xp3"> Experiance Points (Xp):</label>
+                        <input type="text" id="Xp3" placeholder="Enter Xp3" name="Xp3">
+                    </div>
+                    <div class="conversion">
+                        <label for="Sp4">Story Points (Sp):</label>
+                        <input type="text" id="Sp4" placeholder="Enter Sp4" name="Sp4">
+                        <span class="span"> &#x3D; </span>
+                        <label for="Xp4"> Experiance Points (Xp):</label>
+                        <input type="text" id="Xp4" placeholder="Enter Xp4" name="Xp4">
+                    </div>
+                    <div class="conversion">
+                        <label for="Sp5">Story Points (Sp):</label>
+                        <input type="text" id="Sp5" placeholder="Enter Sp5" name="Sp5">
+                        <span class="span"> &#x3D; </span>
+                        <label for="Xp5"> Experiance Points (Xp):</label>
+                        <input type="text" id="Xp5" placeholder="Enter Xp5" name="Xp5">
+                    </div>
+
+                    <div class="center">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <h2>User Account</h2>
+            <p>The user account page will be viewable to all members of the team and will be the page in the web app
+                used to modify account details (email, password, username (used by each game), bio, etc.). When a new
+                member is added to the Kanban board, their account will be automatically created. This allows for XP to
+                immediately be sent to their account when a task is completed. For this to happen, ToDoTopia will take
+                the new user’s email from DevOps and create a temporary password to be emailed to the user. The email
+                will direct the user to change the temporary password and finish setting up their account by choosing a
+                unique username and adding a bio and some social links.</p>
         </div>
 
         <div id="Built" class="tabcontent">
-            <h3>How the Web App will be Built</h3>
-            <p>Who we are and what we do.</p>
+            <h1>How the Web App will be Built</h1>
+            <h2>.NET Framework</h2>
+            <p>There are dozens of frameworks we can choose from to create the web app and games. Our games will be
+                developed using Unity game engine and the language C#. Our web app will be developed using <a
+                    href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps">ASP.NET Core</a>
+                which is a framework that uses the languages of HTML, CSS, JavaScript and C# to programme a web app. We
+                will be required to learn these languages and have already started on this journey as we have used HTML,
+                CSS and a bit of JavaScript to create a simple website hosted on GitHub. Razor will also be used and is
+                any file with the suffix .cshtml. Razor is a server-side markup language that is a combination of HTML
+                and C#. ASP.NET Core also allows for the creation of APIs which will be needed to transmit data from the
+                web app to the games and vice versa.</p>
+
+            <img class="techMap" src="Images/.netcore.jpg" alt="TechnologyMap">
+
+            <h2>Connecting to Azure DevOps (and Jira) through API</h2>
+            <p>ToDoTopia’s web app will constantly be ‘communicating’ with Azure DevOps in the backend on the server
+                side by sending a get request through an API to the DevOps Kanban board used by the team. Data will be
+                returned to the web app and entered into its databases. If tasks are completed, then that data will run
+                through some functions which will be programmed to calculate the amount of XP to be assigned and who to
+                assign it to. All this will happen in the backend on the server side and the results will be displayed
+                in the user’s browser. The web app itself will receive updates about XP using AJAX (Asynchronous
+                JavaScript and XML) with the data in the format of JSON (JavaScript Object Notation).
+                When tasks are added in the DevOps Kanban board, they will be sent to ToDoTopia’s databases through an
+                API. Before being saved to the database, a programme will run, turning the storypoints from the task
+                into XP based on the team leader’s settings in Admin. This data will sit in the database until the task
+                is completed or moved into a new stage of progression (In Progress, Ready for Review, Complete, etc.).
+                When these changes are made to the task in the Kanban board, the XP will be assigned to the user who
+                changed it and saved to a new database. If a task is moved back in a stage of progression (e.g. Complete
+                to In Progress), that XP will be subtracted from the user’s ToDoTopia account and moved back to the
+                unassigned XP database.
+            </p>
+            <h2>Connecting to Game through API (to transfer XP data)</h2>
+            <p>ToDoTopia’s games will be hosted separate from the web app and will receive data about XP via an API. At
+                the start of a match/battle in a game, the game will send a final get request to the web app before
+                freezing XP updates to the game. This freezing allows users to purchase any items and play the game
+                without any interference from tasks being changed in the DevOps Kanban board. After the match/battle,
+                the game will update XP data in the databases based on the results of the match/battle. Any XP that was
+                used to purchase in-game items will be subtracted from the user’s total XP and any XP won in-game will
+                be added to the user’s XP and be viewable in the web app.</p>
+
+            <div class="GameArticles">
+                <p>Helpful Resource:</p>
+                <Ul>
+                    <li><a href="https://docs.microsoft.com/en-us/aspnet/overview">aspnet-overview</a>
+                    </li>
+                    <li><a href="https://youtube.com/playlist?list=PLdo4fOcmZ0oW8nviYduHq7bmKode-p8Wy">ASP.NET Core
+                            101</a>
+                    </li>
+                    <li><a href="-	https://www.w3schools.com/xml/ajax_intro.asp">W3 Schools ajax intro</a>
+                    </li>
+                    <li><a href="https://www.w3schools.com/whatis/whatis_json.asp">W3 Schools wht is json</a>
+                    </li>
+                </Ul>
+            </div>
+
+            <h2>User Interface</h2>
+            <p>The UI can also be created in unity a long with the game. Unity provides three UI systems that we can use
+                to create our user interfaces for games made in unity editor. These three UI systems are a UI toolkit,
+                uGUI and IMGUI.
+                The UI Toolkit is used to create extensions for the Unity Editor and is also used to create runtime UI
+                for games and applications. The toolkit contains a retained-mode UI system, this system contains the
+                features and functionality required to create user interfaces. UI asset types that have been inspired by
+                popular standard web formats such as CSS, XML and HTML. These can be used to structure and to style the
+                user interface to our liking. The toolkit also contains recourses we can use to learn how to use the UI
+                Toolkit. It will teach us how to create and debug the interface we create.<br><br>
+                The Unity User Interface package (uGUI) is a game-based UI system that we can use to create runtime UI
+                for our RTS game. The uGUI package allows us to take advantage of advanced rendering and text features.
+                It will allow us to arrange, position and style the UI.<br><br>
+
+                The Immediate Mode Graphical User Interface (IMGUI) will allow us to use the OnGUI function and scripts
+                that we can use to draw and manage the user interface. IMGUI will also allow us to create custom
+                inspectors for extensions for the Unity Editor, script components and in-game debugging displays.
+            </p>
+
+            <h2>How does the game save data and keep all data up to date? </h2>
+            <p>ToDoTopia will be a web-based game that will use a cloud service (AWS/Azure) to manage all of our in-game
+                data requirements, allowing you to view all of your game data from any device and from anywhere.<br><br>
+
+                Cloud saves is a feature that allows games and platforms that require saving game files to use cloud
+                storage. This feature covers everything from in-game progress storage to settings, purchases, and
+                profiles. In-game purchases are a typical feature of today's digital gaming, and they demand payment
+                using game credits, which are frequently purchased with real money. Because the data is saved on the
+                cloud, the account information provided for this purpose is protected from being erased or
+                breached.<br><br>
+
+                When a gaming session finishes, cloud saves are an automated process that synchronises the saved data
+                from the game to cloud storage. To prevent gaming frauds cloud, the player is required to manually
+                upload the locally saved game data to the ui if there is an issue during this sync. Another alternative
+                is to resume the sync by downloading previously saved game data from the cloud.<br><br>
+            </p>
+
+            <h2>Benefits of Cloud saves</h2>
+            <p>With huge volumes of data being kept on the cloud, the ability to save and synchronise data through cloud
+                storage has become a requirement in our life. Although the free space in smartphones, computers, and
+                gaming consoles makes customers happy, the benefits of cloud storage disappear when the service
+                experiences technical difficulties or fails to function effectively.<br><br>
+
+                For instances where the gamer wants to play alone without connecting to servers for multiplayer mode,
+                the sync will simply not happen. Also, when they want to show off their in-game achievements to a friend
+                and the location doesn’t offer sufficient internet, the game progress that is indicated might not be
+                completely updated. For these reasons, cloud saves come in handy when accessing games through different
+                platforms, internet speeds, and locations.
+            </p>
         </div>
 
         <div id="Projectstory" class="tabcontent">
-            <h3>Project story</h3>
-            <p>Who we are and what we do.</p>
+            <h1>Project story</h1>
+            <h2>How it Began:</h2>
+            <p>The inception of ToDoTopia began with Jesse Watson’s first assignment for RMIT’s Introductory IT
+                course.<br><br>
+
+                In an independent project he researched the viability and real-world applications of gamification and
+                how it can be used to increase productivity and maintaining a higher level of motivation to carry out
+                tasks. The concept comes from visualizing a fusion between gamification to-do lists like <a
+                    href="https://habitica.com/static/home">Habitica</a> which
+                is an individual centric gamified to-do list application, and <a href="https://todoist.com/">Todoist</a>
+                a more group centric application
+                with a professional UI. The idea at this stage was to have the completed tasks award points which would
+                subsequently display as a village or character which then acquires better equipment, or the town’s size
+                and quality would improve.<br><br>
+
+                This concept became the idea with which we as Team Thirteen from RMIT chose to further develop in the
+                endeavour of creating a product which would fill an unchartered territory which is gamification in a
+                work environment. <br><br>
+            </p>
+            <h2>How it has Progressed:</h2>
+            <p>Having realised that the concept of gamifying a to-do list for individuals was a well traversed territory
+                we subsequently opted to venture into an untapped market which is workplace gamification.
+                After discussing the goals for project ToDoTopia, we at Team Thirteen decided that we would like to
+                design a game that linked workplace assigned tasks to a rewards system that would allow users to
+                accumulate points that are distributed on completion of tasks, the number of points distributed will be
+                controlled by the organisations designated administrators. Organisations that use ToDoTopia will have
+                the ability to customize many aspects of the game and its web application to further personalize it to
+                their requirements and preferences.<br><br>
+
+                We settled upon using Unity as the engine for the game, as it has a wide range of tools which will
+                assist us greatly in building our game.
+                From research on the game engine Unity, we found that to begin developing with it is free until revenue
+                and funding exceeds 100k USD as described on their <a
+                    href="https://store.unity.com/compare-plans">website</a>, therefore we don’t need to worry about
+                buying the software until we start to make a profit from the game. As we develop the game further, we
+                may find limitations in the free Unity package and may need to consider purchasing one of the premium
+                options.<br><br>
+
+                The internet would be used to host our Unity game, whilst utilising cloud storage for both the HTML page
+                and Unity game.
+                Our goal is to have a web application serve as the core for the project ToDoTopia. While the web app
+                will be where the tasks are completed for points and the game portion will be where the rewards are
+                utilised in gameplay, we hope to expand on the number of ways you can use rewards by adding new games
+                linked to the rewards system, establishing a connection with pre-existing rewards systems like Flybuy or
+                Woolworths points for example, or even offering company perks or bonuses based on ranking in a company
+                leaderboard.<br><br>
+
+                The task system would be deployed on an Azure DevOps Kanban board system and connected via API.
+                Team Thirteen doesn’t have a lot of experience using Azure DevOps, Kanban boards, or APIs so more
+                research will need to be undertaken to finalise this plan, we may find we can even implement features
+                for Scrum boards and other niche boards. At this stage we have decided to pursue using a Kanban board
+                hosted with Azure DevOps <a href="https://azure.microsoft.com/en-au/services/devops/boards/">Boards</a>
+                which will connect to the game via an API service like <a href="https://www.postman.com/">Postman</a> to
+                allow them both to interconnect their experience points and rewards systems.
+                Conclusion: ToDoTopia has undergone significant improvements since its conception, though a lot of
+                planning and learning is still required before we can make a start on developing ToDoTopia into the
+                product that we have envisioned.
+
+                <h2>What Stage are we at with the Project:</h2>
+                <p>We have laid out the framework for our development and learning plan for building ToDoTopia, with a
+                    large emphasis being placed upon the learning path and prioritisation of skills we will need for
+                    development.<br><br>
+
+                    In consideration of the fact that many of us in Team Thirteen lack the technical skills and
+                    knowledge to undertake the building of the game in Unity, we have instead focused our attention on
+                    planning the games features, the tools we need to generate these features, any software
+                    infrastructure required, also any skills and talents we will need to develop.<br><br>
+
+                    We’ve created concept pieces for the game’s UI and described what the finished product will look
+                    like along with the modes we will first develop for the game. We aim to release game modes
+                    individually to maintain a minimum viable product through development and expand upon our offered
+                    services over time. We’ve discussed using a subscription fee model as the games form of
+                    monetization, subscription fees will allow us to charge a modest sum during our early stages of
+                    development where our offering of game modes may be meagre. As our services diversify, we can always
+                    raise our subscription fee, this eliminates any lost revenue from selling a one-time purchase game
+                    license for a low price then adding a multitude of features then raising the price.<br><br>
+
+                    Due to our deficiencies in software development and game design we have not made substantial
+                    progress in the material development of the ToDoTopia’s game or web application components, instead
+                    we have only created concepts and elaborated on our plan to build the project.
+
+                    <h2>Any Dead Ends we have come Across:</h2>
+                    <p>There are a few areas in which we are lacking such as our programming, artistic, and sound
+                        editing abilities. Listed here is just a few of our shortcomings but are our most critical
+                        issues or issues without simple resolutions.<br><br>
+
+                        Our programming ability is largely rudimentary at this stage which prevents us from creating a
+                        game with our own code at this stage. To overcome this deficit, we will need to dedicate time to learning programming languages like
+                        C#, C++, or JavaScript for our required applications for use with Unity and its toolkits we
+                        intend to use. Over time, as we learn more about programming and Unity, we might discover
+                        applications that are more suitable to our needs and thus may need to learn to use any new
+                        software and languages as well.<br><br>
+
+                        To learn these programming languages there are many excellent free resources available online or
+                        we could opt to enrol in a paid bootcamp for learning to code. One of the free resources
+                        available are <a href="https://www.w3schools.com/">W3Schools</a> which provides learning materials for <a href="https://www.w3schools.com/js/default.asp">JavaScript</a> and many of the most
+                        popular programming languages such as <a href="https://www.w3schools.com/cs/index.php">C#</a>, <a href="https://www.w3schools.com/cpp/default.asp">C++</a>, <a href="https://www.w3schools.com/python/default.asp">Python</a> and more. Then secondly there is
+                        <a href="https://www.freecodecamp.org/learn/">FreeCodeCamp</a> which presently offers 12 free certification courses to choose from, ranging from
+                        <a href="https://www.freecodecamp.org/learn/back-end-development-and-apis/">Back-End Development and APIs</a> to <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/">Scientific Computing with Python</a> to name a couple. Utilising
+                        free learning resources and development software will help us greatly along the way as it will
+                        likely be a long road towards making ToDoTopia into a profitable service.<br><br>
+
+                        Artistic talent is another area in which we lack, Team Thirteen was formed from students
+                        enrolled in an Introductory IT course so naturally the chances of it being a field of experience
+                        was slim.<br><br>
+
+                        We will need to develop the art related aspects of both our web application and the game itself.
+                        For the web application we will need to learn more about UI &amp; UX design to increase user
+                        satisfaction with our products, this design could be undertaken by any of us after having
+                        studied UI &amp; UX design either at RMIT, FreeCodeCamp provides a course on Front-End Development
+                        which could be a useful resource for one or more of us to study to ensure a smooth user
+                        interaction with our web application.<br><br>
+
+                        We will also need someone with the ability to create concept art, game art, animations, and
+                        visual effects to name just a few. These are skills we absolutely do not have presently and
+                        therefore cannot develop the art of the game unless we were to use premade resources provided
+                        within Unity, or one of Team Thirteens members chose to specialise in artistic design, or we
+                        recruit outside help from someone with art design skills.<br><br>
+
+                        James Costello has shown an aptitude for using Adobe Photoshop to produce visual elements used
+                        in the creation of our assessment webpages, UI &amp; UX may be an avenue James wishes to further his
+                        skills in for the project.<br><br>
+
+                        Hayden Bleys also has qualifications in Visual Arts, which may serve as a starting point to
+                        further his education in Art Design for games and become a Technical Artist.<br><br>
+
+                        Reflecting upon our shortcomings in the art design area allows us to see that we need someone to
+                        be take on learning so that they can specialise in UI &amp; UX as it is one of the most critical
+                        aspects. We also now know that one issue we will need to address before we advance with the
+                        production of ToDoTopia is our lack of Art Design skills.
+                    </p>
+                </p>
+
+
+
+
+
+            </p>
         </div>
 
         <script src="projectDescription.js"></script>

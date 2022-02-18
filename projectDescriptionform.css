@@ -1,0 +1,61 @@
+.form-inline h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.conversion {
+    display: flex;
+    margin-top: 1em;
+    justify-content: center;
+}
+
+/* Add some margins for each label */
+.conversion label {
+    margin: 5px 10px 5px 0;
+}
+
+/* Style the input fields */
+.conversion input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #00ff00;
+}
+
+.span {
+    padding-right: 1em;
+}
+
+/* Style the submit button */
+.form-inline button {
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    border: 1px solid #00ff00;
+    color: black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.form-inline button:hover {
+    background-color: #00ff00;
+}
+
+.form-inline {
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 50%;
+    padding: 1em;
+    border: #ff69b4 solid .2em;
+    border-radius: .2em;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+
+}
