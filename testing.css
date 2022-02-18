@@ -5,3 +5,154 @@ body {
     background-image: url(Images/brickworkBackground.jpg);
 
 }
+
+#header {
+  max-width: 60%;
+  margin-left: 30em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  opacity: 75%;
+}
+
+h3 {
+    text-align: center;
+    color: #00ff00;
+    font-size: 2em;
+}
+
+p {
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.39);
+    background-size: contain;
+    padding-top: 15px;
+    padding-right: 150px;
+    padding-bottom: 15px;
+    padding-left: 150px;
+    margin: 10px;
+    border: 2px;
+    border-style: ridge;
+    border-color: #ff69b4;
+    cursor: default;
+}
+
+ul {
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: rgba(51, 51, 51, 0.39);
+    background-size: contain;
+    padding-top: 15px;
+    padding-right: 150px;
+    padding-bottom: 15px;
+    padding-left: 150px;
+    margin: 10px;
+    border: 2px;
+    border-style: ridge;
+    border-color: #ff69b4;
+    cursor: default;
+}
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+    height: 100%;
+    margin: 100;
+    font-family: Arial;
+    
+  }
+  
+  /* Style tab links */
+  .tablink {
+    background-color: #ff64b4;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 17px 16px;
+    font-size: 17px;
+    width: 16%;
+    transition: 0.3s;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .tablink:hover {
+    background-color: #99ff33;
+    color: #ff64b4;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 50px 20px;
+    height: 100%;
+    font-size: 25px;
+  }
+  
+  #UnitTesting {background-color: transparent;}
+  #APITesting {background-color: transparent;}
+  #QATesting {background-color: transparent;}
+  #UATesting {background-color: transparent;}
+  #PerformanceTesting {background-color: transparent;}
+  #BetaTesting {background-color: transparent;}
+
+  /* Media Queries */
+
+@media all and (max-width: 600px) {
+
+    
+  #header {
+      margin-left: 20%;
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+  }
+}
+
+@media all and (min-width: 601px) and (max-width:992px) {
+  
+  
+  #header {
+      margin-left: 20%;
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+  }
+
+}
+
+@media all and (min-width: 993px) and (max-width:1200px) {
+  
+  
+  #header {
+      margin-left: 20%;
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+  }
+
+}
+
+@media all and (min-width: 1201px) and (max-width:1400px) {
+  
+  
+  #header {
+      margin-left: 22%;
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+  }
+
+}
+
+@media all and (min-width: 1400px) and (max-width:1900px) {
+  
+  
+  #header {
+      margin-left: 20%;
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+  }
+
+}
+
+
+
+  
