@@ -59,3 +59,123 @@
     justify-content: center;
 
 }
+
+@media all and (max-width: 600px) {
+    .conversion {
+        
+        margin-top: .5em;
+       
+    }
+    /* Add some margins for each label */
+    .conversion label {
+        margin: 2px 5px 2px 0;
+        font-size: .8em;
+    }
+    /* Style the input fields */
+    .conversion input {       
+        margin: 2px 5px 2px 0;
+        padding: 5px; 
+        width:10%;    
+    }
+    
+    .span {
+        padding-right: .5em;
+    }
+    
+    /* Style the submit button */
+    .form-inline button {
+        padding: 5px 10px;       
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }  
+    .form-inline {        
+        width: 100%;
+        padding: .5em;       
+        border-radius: .1em;
+    } 
+}
+
+@media all and (min-width: 601px) and (max-width:992px) {
+
+    .conversion {
+        
+        margin-top: .5em;
+       
+    }
+    /* Add some margins for each label */
+    .conversion label {
+        margin: 2px 5px 2px 0;
+        font-size: .8em;
+    }
+    /* Style the input fields */
+    .conversion input {       
+        margin: 2px 5px 2px 0;
+        padding: 5px; 
+        width:10%;    
+    }
+    
+    .span {
+        padding-right: .5em;
+    }
+    
+    /* Style the submit button */
+    .form-inline button {
+        padding: 5px 10px;       
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }  
+    .form-inline {        
+        width: 90%;
+        padding: .5em;       
+        border-radius: .1em;
+    } 
+
+
+}
+
+@media all and (min-width: 993px) and (max-width:1200px) {
+    .conversion {
+        
+        margin-top: .5em;
+       
+    }
+    /* Add some margins for each label */
+    .conversion label {
+        margin: 2px 5px 2px 0;
+        font-size: .8em;
+    }
+    /* Style the input fields */
+    .conversion input {       
+        margin: 2px 5px 2px 0;
+        padding: 5px; 
+        width:10%;    
+    }
+    
+    .span {
+        padding-right: .5em;
+    }
+    
+    /* Style the submit button */
+    .form-inline button {
+        padding: 5px 10px;       
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }  
+    .form-inline {        
+        width: 80%;
+        padding: .5em;       
+        border-radius: .1em;
+    } 
+  
+
+
+}
+
+@media all and (min-width: 1201px) and (max-width:1400px) {
+ 
+}
+
+@media all and (min-width: 1400px) and (max-width:1900px) {
+
+
+}

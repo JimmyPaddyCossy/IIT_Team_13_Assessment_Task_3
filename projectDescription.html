@@ -35,10 +35,10 @@
 
     <header><img id="header" src="Images/ProjDesc.png"></header>
 
-    <button class="tablink" onclick="openPage('Overview', this)" id="defaultOpen">Overview</button>
+    <button class="tablink" onclick="openPage('Overview', this)" id="defaultOpen" >Overview</button>
     <button class="tablink" onclick="openPage('Desc', this)">Detailed Description</button>
-    <button class="tablink" onclick="openPage('Plans', this)">Plans and Progress</button>
-    <button class="tablink" onclick="openPage('Look', this)">What the Web App Will Look Like</button>
+    <button class="tablink" onclick="openPage('Plans', this)" >Plans and Progress</button>
+    <button class="tablink" onclick="openPage('Look', this)" >What the Web App Will Look Like</button>
     <button class="tablink" onclick="openPage('Built', this)" >How the Web App will be Built</button>
     <button class="tablink" onclick="openPage('Projectstory', this)">Project story</button>
 
@@ -266,7 +266,7 @@
                 Thirteen proposes to use this set of requests to pull in story points for conversion in to Experience
                 pints on the ToDoTopia Platform. As you can see the Azure DevOps Kanban board below has three work Items
                 in the “Done” Column.</p>
-            <img class="Kanban" src="Images/kanban.PNG" alt="Kanban">
+            <div class="zoom"><img class="Kanban" src="Images/kanban.PNG" alt="Kanban"></div>
             <p>Looking through the <a
                     href="https://docs.microsoft.com/en-us/rest/api/azure/devops/wit/?view=azure-devops-rest-6.0">Azure
                     DevOps API documentation</a>details of work in the Kanban Board can be retrieved
@@ -298,67 +298,67 @@
                         </tr>
                         <tr>
                             <td>Query Data in JSON format </td>
-                            <td><code>{
-                                    "query":
-                                    "Select
-                                    [System.Id],
-                                    [System.Title],
-                                    [System.State],
-                                    [System.IterationPath]
-                                    From WorkItems
-                                    Where
-                                    [System.WorkItemType] = 'Issue'
-                                    AND [System.State] = 'Done'
-                                    AND [System.IterationPath] = @currentIteration ('[ToDoTopia]\\ToDoTopia Team')"
+                            <td><code>{<br>
+                                    "query":<br>
+                                    "Select<br>
+                                    [System.Id],<br>
+                                    [System.Title],<br>
+                                    [System.State],<br>
+                                    [System.IterationPath]<br>
+                                    From WorkItems<br>
+                                    Where<br>
+                                    [System.WorkItemType] = 'Issue'<br>
+                                    AND [System.State] = 'Done'<br>
+                                    AND [System.IterationPath] = @currentIteration ('[ToDoTopia]\\ToDoTopia Team')"<br>
                                     }</code>
                             </td>
                         </tr>
                         <tr>
                             <td>Response </td>
                             <td><code>{
-                                    "queryType": "flat",
-                                    "queryResultType": "workItem",
-                                    "asOf": "2022-02-11T00:44:04.077Z",
-                                    "columns": [
-                                    {
-                                    "referenceName": "System.Id",
-                                    "name": "ID",
-                                    "url": "https://dev.azure.com/S3931159/_apis/wit/fields/System.Id"
-                                    },
-                                    {
-                                    "referenceName": "System.Title",
-                                    "name": "Title",
-                                    "url": "https://dev.azure.com/S3931159/_apis/wit/fields/System.Title"
-                                    },
-                                    {
-                                    "referenceName": "System.State",
-                                    "name": "State",
-                                    "url": "https://dev.azure.com/S3931159/_apis/wit/fields/System.State"
-                                    },
-                                    {
-                                    "referenceName": "System.IterationPath",
-                                    "name": "Iteration Path",
-                                    "url": "https://dev.azure.com/S3931159/_apis/wit/fields/System.IterationPath"
-                                    }
-                                    ],
-                                    "workItems": [
-                                    {
-                                    "id": 1,
-                                    "url":
-                                    "https://dev.azure.com/S3931159/1a204fbf-67b4-4df3-a0d6-b02c5c2e6cf6/_apis/wit/workItems/1"
-                                    },
-                                    {
-                                    "id": 2,
-                                    "url":
-                                    "https://dev.azure.com/S3931159/1a204fbf-67b4-4df3-a0d6-b02c5c2e6cf6/_apis/wit/workItems/2"
-                                    },
-                                    {
-                                    "id": 4,
-                                    "url":
-                                    "https://dev.azure.com/S3931159/1a204fbf-67b4-4df3-a0d6-b02c5c2e6cf6/_apis/wit/workItems/4"
-                                    }
-                                    ]
-                                    }
+                                    "queryType": "flat",<br>
+                                    "queryResultType": "workItem",<br>
+                                    "asOf": "2022-02-11T00:44:04.077Z",<br>
+                                    "columns": [<br>
+                                    {<br>
+                                    "referenceName": "System.Id",<br>
+                                    "name": "ID",<br>
+                                    "url": "https://dev.azure.com/S3931159/_apis/wit/fields/System.Id"<br>
+                                    },<br>
+                                    {<br>
+                                    "referenceName": "System.Title",<br>
+                                    "name": "Title",<br>
+                                    "url": "https://dev.azure.com/S3931159/_apis/wit/fields/System.Title"<br>
+                                    },<br>
+                                    {<br>
+                                    "referenceName": "System.State",<br>
+                                    "name": "State",<br>
+                                    "url": "https://dev.azure.com/S3931159/_apis/wit/fields/System.State"<br>
+                                    },<br>
+                                    {<br>
+                                    "referenceName": "System.IterationPath",<br>
+                                    "name": "Iteration Path",<br>
+                                    "url": "https://dev.azure.com/S3931159/_apis/wit/fields/System.IterationPath"<br>
+                                    }<br>
+                                    ],<br>
+                                    "workItems": [<br>
+                                    {<br>
+                                    "id": 1,<br>
+                                    "url":<br>
+                                    "https://dev.azure.com/S3931159/1a204fbf-67b4-4df3-a0d6-b02c5c2e6cf6/_apis/wit/workItems/1"<br>
+                                    },<br>
+                                    {<br>
+                                    "id": 2,<br>
+                                    "url":<br>
+                                    "https://dev.azure.com/S3931159/1a204fbf-67b4-4df3-a0d6-b02c5c2e6cf6/_apis/wit/workItems/2"<br>
+                                    },<br>
+                                    {<br>
+                                    "id": 4,<br>
+                                    "url":<br>
+                                    "https://dev.azure.com/S3931159/1a204fbf-67b4-4df3-a0d6-b02c5c2e6cf6/_apis/wit/workItems/4"<br>
+                                    }<br>
+                                    ]<br>
+                                    }<br>
 
                                 </code></td>
                         </tr>
@@ -387,107 +387,107 @@
                         </tr>
                         <tr>
                             <td>JSON Raw data </td>
-                            <td><code>{
-                                    "ids": [
-                                    1,
-                                    2,
-                                    4
-                                    ],
-                                    "fields": [
-                                    "System.AssignedTo",
-                                    "Microsoft.VSTS.Scheduling.StoryPoints"
-                                    ]
-                                    }
+                            <td><code>{<br>
+                                    "ids": [<br>
+                                    1,<br>
+                                    2,<br>
+                                    4<br>
+                                    ],<br>
+                                    "fields": [<br>
+                                    "System.AssignedTo",<br>
+                                    "Microsoft.VSTS.Scheduling.StoryPoints"<br>
+                                    ]<br>
+                                    }<br>
                                 </code>
                             </td>
                         </tr>
                         <tr>
                             <td>Response </td>
-                            <td><code>{
-                                    "count": 3,
-                                    "value": [
-                                    {
-                                    "id": 1,
-                                    "rev": 11,
-                                    "fields": {
-                                    "System.AssignedTo": {
-                                    "displayName": "Bradley Williams",
-                                    "url":
-                                    "https://spsprodeau1.vssps.visualstudio.com/A16c93c5d-2171-4a4b-88cb-c2d375c3bc98/_apis/Identities/7857fca1-7bda-6f8e-b638-25dacad71ac3",
-                                    "_links": {
-                                    "avatar": {
-                                    "href":
-                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.Nzg1N2ZjYTEtN2JkYS03ZjhlLWI2MzgtMjVkYWNhZDcxYWMz"
-                                    }
-                                    },
-                                    "id": "7857fca1-7bda-6f8e-b638-25dacad71ac3",
-                                    "uniqueName": "S3935806@student.rmit.edu.au",
-                                    "imageUrl":
-                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.Nzg1N2ZjYTEtN2JkYS03ZjhlLWI2MzgtMjVkYWNhZDcxYWMz",
-                                    "descriptor": "aad.Nzg1N2ZjYTEtN2JkYS03ZjhlLWI2MzgtMjVkYWNhZDcxYWMz"
-                                    },
-                                    "Microsoft.VSTS.Scheduling.StoryPoints": 2.0
-                                    },
-                                    "url": "https://dev.azure.com/S3931159/_apis/wit/workItems/1"
-                                    },
-                                    {
-                                    "id": 2,
-                                    "rev": 7,
-                                    "fields": {
-                                    "System.AssignedTo": {
-                                    "displayName": "James Costello",
-                                    "url":
-                                    "https://spsprodeau1.vssps.visualstudio.com/A16c93c5d-2171-4a4b-88cb-c2d375c3bc98/_apis/Identities/27ec99af-e6ad-6506-8133-d24c162a373a",
-                                    "_links": {
-                                    "avatar": {
-                                    "href":
-                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.MjdlYzk5YWYtZTZhZC03NTA2LTgxMzMtZDI0YzE2MmEzNzNh"
-                                    }
-                                    },
-                                    "id": "27ec99af-e6ad-6506-8133-d24c162a373a",
-                                    "uniqueName": "S3931159@student.rmit.edu.au",
-                                    "imageUrl":
-                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.MjdlYzk5YWYtZTZhZC03NTA2LTgxMzMtZDI0YzE2MmEzNzNh",
-                                    "descriptor": "aad.MjdlYzk5YWYtZTZhZC03NTA2LTgxMzMtZDI0YzE2MmEzNzNh"
-                                    },
-                                    "Microsoft.VSTS.Scheduling.StoryPoints": 5.0
-                                    },
-                                    "url": "https://dev.azure.com/S3931159/_apis/wit/workItems/2"
-                                    },
-                                    {
-                                    "id": 4,
-                                    "rev": 6,
-                                    "fields": {
-                                    "System.AssignedTo": {
-                                    "displayName": "Jesse Watson",
-                                    "url":
-                                    "https://spsprodeau1.vssps.visualstudio.com/A16c93c5d-2171-4a4b-88cb-c2d375c3bc98/_apis/Identities/9bec9148-791c-6284-8fc2-547bd8cd721d",
-                                    "_links": {
-                                    "avatar": {
-                                    "href":
-                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.OWJlYzkxNDgtNzkxYy03Mjg0LThmYzItNTQ3YmQ4Y2Q3MjFk"
-                                    }
-                                    },
-                                    "id": "9bec9148-791c-6284-8fc2-547bd8cd721d",
-                                    "uniqueName": "S3933489@student.rmit.edu.au",
-                                    "imageUrl":
-                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.OWJlYzkxNDgtNzkxYy03Mjg0LThmYzItNTQ3YmQ4Y2Q3MjFk",
-                                    "descriptor": "aad.OWJlYzkxNDgtNzkxYy03Mjg0LThmYzItNTQ3YmQ4Y2Q3MjFk"
-                                    },
-                                    "Microsoft.VSTS.Scheduling.StoryPoints": 3.0
-                                    },
-                                    "url": "https://dev.azure.com/S3931159/_apis/wit/workItems/4"
-                                    }
-                                    ]
-                                    }
-                                    "imageUrl":
-                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.MjdlYzk5YWYtZTZhZC03NTA2LTgxMzMtZDI0YzE2MmEzNzNh",
-                                    "descriptor": "aad.MjdlYzk5YWYtZTZhZC03NTA2LTgxMzMtZDI0YzE2MmEzNzNh"
-                                    }
-                                    },
-                                    "url": "https://dev.azure.com/S3931159/_apis/wit/workItems/4"
-                                    }
-                                    ]
+                            <td><code>{<br>
+                                    "count": 3,<br>
+                                    "value": [<br>
+                                    {<br>
+                                        <strong style="color: #00ff00">"id": 1,</strong><br>
+                                    "rev": 11,<br>
+                                    "fields": {<br>
+                                    "System.AssignedTo": {<br>
+                                        <strong style="color: #00ff00">"displayName": "Bradley Williams",</strong><br>
+                                    "url":<br>
+                                    "https://spsprodeau1.vssps.visualstudio.com/A16c93c5d-2171-4a4b-88cb-c2d375c3bc98/_apis/Identities/7857fca1-7bda-6f8e-b638-25dacad71ac3",<br>
+                                    "_links": {<br>
+                                    "avatar": {<br>
+                                    "href":<br>
+                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.Nzg1N2ZjYTEtN2JkYS03ZjhlLWI2MzgtMjVkYWNhZDcxYWMz"<br>
+                                    }<br>
+                                    },<br>
+                                    "id": "7857fca1-7bda-6f8e-b638-25dacad71ac3",<br>
+                                    <strong style="color: #00ff00">"uniqueName": "S3935806@student.rmit.edu.au",</strong><br>
+                                    "imageUrl":<br>
+                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.Nzg1N2ZjYTEtN2JkYS03ZjhlLWI2MzgtMjVkYWNhZDcxYWMz",<br>
+                                    "descriptor": "aad.Nzg1N2ZjYTEtN2JkYS03ZjhlLWI2MzgtMjVkYWNhZDcxYWMz"<br>
+                                    },<br>
+                                    <strong style="color: #00ff00">"Microsoft.VSTS.Scheduling.StoryPoints": 2.0</strong><br>
+                                    },<br>
+                                    "url": "https://dev.azure.com/S3931159/_apis/wit/workItems/1"<br>
+                                    },<br>
+                                    {<br>
+                                        <strong style="color: #00ff00"> "id": 2,</strong><br>
+                                    "rev": 7,<br>
+                                    "fields": {<br>
+                                    "System.AssignedTo": {<br>
+                                        <strong style="color: #00ff00">"displayName": "James Costello",</strong><br>
+                                    "url":<br>
+                                    "https://spsprodeau1.vssps.visualstudio.com/A16c93c5d-2171-4a4b-88cb-c2d375c3bc98/_apis/Identities/27ec99af-e6ad-6506-8133-d24c162a373a",<br>
+                                    "_links": {<br>
+                                    "avatar": {<br>
+                                    "href":<br>
+                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.MjdlYzk5YWYtZTZhZC03NTA2LTgxMzMtZDI0YzE2MmEzNzNh"<br>
+                                    }<br>
+                                    },<br>
+                                    "id": "27ec99af-e6ad-6506-8133-d24c162a373a",<br>
+                                    <strong style="color: #00ff00">"uniqueName": "S3931159@student.rmit.edu.au",</strong><br>
+                                    "imageUrl":<br>
+                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.MjdlYzk5YWYtZTZhZC03NTA2LTgxMzMtZDI0YzE2MmEzNzNh",<br>
+                                    "descriptor": "aad.MjdlYzk5YWYtZTZhZC03NTA2LTgxMzMtZDI0YzE2MmEzNzNh"<br>
+                                    },<br>
+                                    <strong style="color: #00ff00">"Microsoft.VSTS.Scheduling.StoryPoints": 5.0</strong><br>
+                                    },<br>
+                                    "url": "https://dev.azure.com/S3931159/_apis/wit/workItems/2"<br>
+                                    },<br>
+                                    {<br>
+                                        <strong style="color: #00ff00">"id": 4,</strong><br>
+                                    "rev": 6,<br>
+                                    "fields": {<br>
+                                    "System.AssignedTo": {<br>
+                                        <strong style="color: #00ff00">"displayName": "Jesse Watson",</strong><br>
+                                    "url":<br>
+                                    "https://spsprodeau1.vssps.visualstudio.com/A16c93c5d-2171-4a4b-88cb-c2d375c3bc98/_apis/Identities/9bec9148-791c-6284-8fc2-547bd8cd721d",<br>
+                                    "_links": {<br>
+                                    "avatar": {<br>
+                                    "href":<br>
+                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.OWJlYzkxNDgtNzkxYy03Mjg0LThmYzItNTQ3YmQ4Y2Q3MjFk"<br>
+                                    }<br>
+                                    },<br>
+                                    "id": "9bec9148-791c-6284-8fc2-547bd8cd721d",<br>
+                                    <strong style="color: #00ff00">"uniqueName": "S3933489@student.rmit.edu.au",</strong><br>
+                                    "imageUrl":<br>
+                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.OWJlYzkxNDgtNzkxYy03Mjg0LThmYzItNTQ3YmQ4Y2Q3MjFk",<br>
+                                    "descriptor": "aad.OWJlYzkxNDgtNzkxYy03Mjg0LThmYzItNTQ3YmQ4Y2Q3MjFk"<br>
+                                    },<br>
+                                    <strong style="color: #00ff00">"Microsoft.VSTS.Scheduling.StoryPoints": 3.0</strong><br>
+                                    },<br>
+                                    "url": "https://dev.azure.com/S3931159/_apis/wit/workItems/4"<br>
+                                    }<br>
+                                    ]<br>
+                                    }<br>
+                                    "imageUrl":<br>
+                                    "https://dev.azure.com/S3931159/_apis/GraphProfile/MemberAvatars/aad.MjdlYzk5YWYtZTZhZC03NTA2LTgxMzMtZDI0YzE2MmEzNzNh",<br>
+                                    "descriptor": "aad.MjdlYzk5YWYtZTZhZC03NTA2LTgxMzMtZDI0YzE2MmEzNzNh"<br>
+                                    }<br>
+                                    },<br>
+                                    "url": "https://dev.azure.com/S3931159/_apis/wit/workItems/4"<br>
+                                    }<br>
+                                    ]<br>
                                     }</code>
                             </td>
                         </tr>
@@ -517,7 +517,7 @@
                 Below is an example of the web application database this does not include the game database itself.
             </p>
 
-            <img class="dataBase" src="Images/dataB.png" alt="Database Diagram">
+            <div class="zoom"><img class="dataBase" src="Images/dataB.png" alt="Database Diagram"></div>
 
         </div>
 
@@ -626,8 +626,8 @@
             <h1>How the Web App will be Built</h1>
             <h2>.NET Framework</h2>
             <p>There are dozens of frameworks we can choose from to create the web app and games. Our games will be
-                developed using Unity game engine and the language C#. Our web app will be developed using <a
-                    href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps">ASP.NET Core</a>
+                developed using Unity game engine and the language C#. Our web app will be developed using 
+                <a href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps">ASP.NET Core</a>
                 which is a framework that uses the languages of HTML, CSS, JavaScript and C# to programme a web app. We
                 will be required to learn these languages and have already started on this journey as we have used HTML,
                 CSS and a bit of JavaScript to create a simple website hosted on GitHub. Razor will also be used and is
@@ -635,7 +635,7 @@
                 and C#. ASP.NET Core also allows for the creation of APIs which will be needed to transmit data from the
                 web app to the games and vice versa.</p>
 
-            <img class="techMap" src="Images/.netcore.jpg" alt="TechnologyMap">
+                <div class="zoom"><img class="techMap" src="Images/netcore.jpg" alt="TechnologyMap"></div>
 
             <h2>Connecting to Azure DevOps (and Jira) through API</h2>
             <p>ToDoTopia’s web app will constantly be ‘communicating’ with Azure DevOps in the backend on the server
