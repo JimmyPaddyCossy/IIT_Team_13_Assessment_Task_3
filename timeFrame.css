@@ -38,4 +38,24 @@ article {
     margin-top: 1em;
 }
 
+#graph1 {
+    margin-top: 2em;
+    height: auto;
+    max-width: 100%;
+    width: 50%;
+    
+    
+}
 
+#graph2 {
+    margin-top: 2em;
+    float: right;
+    height: auto;
+    max-width: 100%;
+    width: 50%
+    
+}
+
+#kanban1 {
+    width: 100%
+}
