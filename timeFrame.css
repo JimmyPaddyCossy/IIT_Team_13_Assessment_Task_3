@@ -7,7 +7,7 @@ body {
 
 #header {
     max-width: 60%;
-    margin-left: 20em;
+    margin-left: 25%;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     opacity: 85%;
@@ -38,25 +38,20 @@ article {
     margin-top: 1em;
 }
 
-#page1 {
-    
-}
-
 #page2 {
-    float: right
-    
-}
-
-#page3 {
-    
-    
+    float: right;
 }
 
 #page4 {
-    float: right 
-    
+    float: right
 }
 
 #kanban1 {
     width: 100%
+}
+
+/*-------------------------------------MEDIA--------------------------------------------*/
+
+#header {
+    ma
 }
