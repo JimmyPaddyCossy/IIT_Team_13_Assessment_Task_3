@@ -1,8 +1,8 @@
 body {
-    background: #333;
     color: white;
     font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
     background-image: url(Images/brickworkBackground.jpg);
+    text-shadow: 4px 4px 2px rgba(0,0,0, 0.9);
 }
 
 #header {
@@ -32,6 +32,15 @@ p {
     margin: 0.1em;
     font-size: 1.5em;
     cursor: default;
+}
+
+#RiskAssessment {
+    display: block;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 /* Animation */
