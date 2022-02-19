@@ -6,32 +6,190 @@
     <title>Roles</title>
     <link type="text/css" rel="stylesheet" href="Nav2.css">
     <link type="text/css" rel="stylesheet" href="Roles.css">
+    <script src="Roles.js"></script>
 </head>
 
 <body>
+    <article>
+        <section>            
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content"> 
+                    <a id="home" href="index.html">Main Home Page</a>
+                    <a  href="Assignment-3.html">Assignment-3 Home Page</a>
+                    <a id="group" href="groupProcesses.html">Group Processes</a>
+                    <a id="career" href="careerPlans.html">Career Plans</a>
+                    <a id="projectDescription" href="projectDescription.html">Project Description</a>
+                    <a id="roles" href="Roles.html">Roles</a>
+                    <a id="scope" href="scopeandLimits.html">Scope and Limits</a>
+                    <a id="toolstech" href="toolsandTech.html">Tools and Technologiess</a>
+                    <a id="testing" href="testing.html">Testing</a>
+                    <a id="timeframe" href="timeFrame.html">Timeframe</a>           
+                    <a id="risks" href="risks.html">Risks</a>
+                    <a id="skilljob" href="skillsandjobs.html">Skills and Jobs</a>
+                </div>
+                </div>
+                <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            
+            <script src="Nav2.js"></script>
+        </section>
+
+        <section id="header_paragraph">
+            <img src="" alt="header" id="header">
+                <p>
+                    Developing a game is an undertaking which generally involves teams much larger than 6 people, but with perseverance and flexibility it can still be accomplished. The limitation of working in a 6-man team is that some roles which normally see multiple specialists may be handled by a single person specialist, they may also need to branch out beyond their own specified duties and assist with several other development roles that are experiencing a heavy workload.
+                </p>
+                <p>
+                    A compact team like ours will necessitate that we either have or develop a broad range of skills and talents since we will be having a role to perform in possibly every area of the game’s development.
+                </p>
+                <p>
+                    The primary roles the team will undertake are described below.
+                </p>
+        </section>
+
+        <section id="main">
+            <button class="tablink" onclick="openPage('game_story_designer', this, '#CF5C36')">Game/Story Designer</button>
+            <button class="tablink" onclick="openPage('programmer', this, '#CF5C36')" id="defaultOpen">Programmer</button>
+            <button class="tablink" onclick="openPage('sound_composer_SFX', this, '#CF5C36')">Sound Composer & SFX</button>
+            <button class="tablink" onclick="openPage('art_ui', this, '#CF5C36')">Art & UI</button>
+
+            <div id="game_story_designer" class="tabcontent">
+                <h2>Game/Story Designer</h2>
+                    <p>
+                        In a small team like ours it will be beneficial to have everyone pitch in with the game design, with one person identified as the lead. It will be important to have a lead designer to ensure that ideas that become implemented stay true to the core theme of the game.
+                    </p>
+                    <p>
+                        One of the tasks a Game Designer should oversee is maintaining a game design document or GDD for short. A GDD is a document that contains information regarding all elements of a game and is something that all members of the team can refer to for details about any game features or visions.
+                    </p>
+                    <p>
+                        <img src="Images/GDD.png" alt="Structure of a GDD" id="gdd" class="zoom">
+                    </p>
     
-    <h1>Roles Page</h1>
+                    <h3>One of the role’s key duties is to develop these aspects of the game:</h3>
+                        <p>
+                            <ul>
+                                <li>The rules the game will abide by</li>
+                                <li>Theme and setting</li>
+                                <li>Story and Character design</li>
+                                <li>Weapons, tools, and other items</li>
+                            </ul>
+                        </p>
+                
+                <h3>Skills Needed:</h3>
+                    <p>
+                        <ul>
+                            <li>Creativity and originality</li>
+                            <li>Fluency in a wide range of software</li>
+                            <li>Extensive knowledge of the market and target demographic of the game</li>
+                            <li>Problem solving</li>
+                            <li>Experience with storytelling</li>
+                        </ul>
+                    </p>
+                
+                <div id="references">
+                    <p>
+                        Figure 1: Game Design Document
+                    </p>
+                    <p>
+                        <a href="https://www.innovecsgames.com/blog/game-design-document/" target="_blank" class="grey_link">https://www.innovecsgames.com/blog/game-design-document/</a>
+                    </p>
+                </div>
+            </div>
+
+            <div id="programmer" class="tabcontent">
+                <h2>Programmer</h2>
+                    <p>
+                        Unity comes with many tools to help to make a game without needing to code, but coding will make applying specific gameplay interactions much more customizable.
+                    </p>
+                    <p>
+                        In our small team a programmer will have to perform most of the debugging and game testing to ensure the game is stable.
+                    </p>
+                    <p>
+                        This could be handled by one person but with assistance from other team members during heavier programming workloads.
+                    </p>
     
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content"> 
-            <a id="home" href="index.html">Main Home Page</a>
-            <a  href="Assignment-3.html">Assignment-3 Home Page</a>
-            <a id="group" href="groupProcesses.html">Group Processes</a>
-            <a id="career" href="careerPlans.html">Career Plans</a>
-            <a id="projectDescription" href="projectDescription.html">Project Description</a>
-            <a id="roles" href="Roles.html">Roles</a>
-            <a id="scope" href="scopeandLimits.html">Scope and Limits</a>
-            <a id="toolstech" href="toolsandTech.html">Tools and Technologiess</a>
-            <a id="testing" href="testing.html">Testing</a>
-            <a id="timeframe" href="timeFrame.html">Timeframe</a>           
-            <a id="risks" href="risks.html">Risks</a>
-            <a id="skilljob" href="skillsandjobs.html">Skills and Jobs</a>
-        </div>
-        </div>
-         <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                    <h3>Some Programmer duties include:</h3>
+                        <p>
+                            <ul>
+                                <li>Developing the code which runs the game</li>
+                                <li>Implementing gameplay mechanics</li>
+                                <li>Developing custom tools that are not included with Unity</li>
+                                <li>Adding in internet connectivity</li>
+                                <li>Finding and rectifying bugs in the code</li>
+                            </ul>
+                        </p>
+                    
+                    <h3>Skills Needed:</h3>
+                        <p>
+                            <ul>
+                                <li>Experience using Unity</li>
+                                <li>C# as a programming language for Unity</li>
+                                <li>Working with game Assets</li>
+                                <li>Optimizing gameplay for computer hardware</li>
+                                <li>Working with GitHub</li>
+                            </ul>
+                        </p>
+            </div>
+
+            <div id="sound_composer_SFX" class="tabcontent">
+                <h2>Sound Composer & SFX</h2>
+                    <p>
+                        Sound is an integral part in setting the atmosphere for a game, there is a proverb which explains that good visuals have the power to save bad audio whilst good audio has the power to save bad visuals. The composer will be tasked with creating all the music and sound whilst working with the game designer and artist to ensure it has the desired affect for the scenes it appears in. They may also be tasked with overseeing the recording of voice lines, editing them, and then integrating them into the game.
+                    </p>
+                    <p>
+                        To help get a feel for the games most apt musical theme the Sound Composer will need to have access to play the game during its develop and build a sense for what music is needed in each situation.
+                    </p>
     
-    <script src="Nav2.js"></script>
+                    <h3>Music or Sound Effects a Composer Might Create Include:</h3>
+                        <p>
+                            <ul>
+                                <li>Background music and/or ambient noise</li>
+                                <li>Sound effects</li>
+                                <li>Voice lines</li>
+                            </ul>
+                        </p>
     
+                    <h3>Skills Needed:</h3>
+                        <p>
+                            <ul>
+                                <li>Experience in composition</li>
+                                <li>Arranging and orchestrating musical pieces</li>
+                                <li>MIDI programming experience</li>
+                            </ul>
+                        </p>
+            </div>
+
+            <div id="art_ui" class="tabcontent">
+                <h2>Art & UI</h2>
+                    <p>
+                        Everything that a player interacts with in game will either be represented by text or an engaging visual. It would be possible to create a game without an artist, but that game would subsequently suffer as most people might generally consider a games art to be one of the most important features whether it’s simplistic or intricately detailed.
+                    </p>
+                    <p>
+                        A Game Artist will cooperate with game designers, programmers, other artists, and perhaps even the music composers to capture the vision of the game as best as possible within its art. Beginning with concept art can help the team move forward whilst the final art is still in development so that the rest of the team has a general idea what the unfinished art may look like and can provide feedback. 
+                    </p>
+                    <p>
+                        They will also oversee making sure that the graphics of the game are sufficiently suited to the minimum recommended hardware requirements of the game to ensure a smooth playing experience whilst ensuring it is a visually engaging one.
+                    </p>
+    
+                    <h3>Some Artworks a Game Artist Will Develop Include:</h3>
+                        <ul>
+                            <li>Menu art</li>
+                            <li>Backgrounds</li>
+                            <li>Character models and portrait art</li>
+                            <li>Weapons and Items</li>
+                            <li>Animations</li>
+                        </ul>
+    
+                    <h3>Skills Needed:</h3>
+                        <ul>
+                            <li>Artistic vision</li>
+                            <li>Solid drawing skills</li>
+                            <li>Comprehension of lighting, perspective, and surface textures</li>
+                            <li>Photoshop experience</li>
+                            <li>3D Rendering experience</li>
+                        </ul>
+            </div>
+        </section>
+    </article>
 </body>
 </html>

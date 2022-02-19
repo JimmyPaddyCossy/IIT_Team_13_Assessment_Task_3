@@ -3,5 +3,298 @@ body {
     color: white;
     font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
     background-image: url(Images/brickworkBackground.jpg);
+    text-shadow: 2px 2px black;
+}
 
+/* Headers */
+#header {
+    max-width: 60%;
+    margin-left: 20em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    opacity: 85%;
+}
+
+h1 {
+    color: #00ff00;
+    text-align: center;
+    background-size: contain;
+    padding: 0.2em;
+    margin-bottom: 0.1em;
+    font-size: 3em;
+}
+
+h2 {
+    color: #00ff00;
+    text-align: center;
+    background-size: contain;
+    padding: 0.2em;
+    margin: 0.1em;
+    font-size: 2em;
+    padding-top: 1em;
+}
+
+/* Sections */
+#header_paragraph {
+    text-align: center;
+}
+
+#header_paragraph p {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main p, h3, li {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Links */
+.grey_link {
+    color: rgb(159, 159, 159);
+}
+
+.grey_link:hover {
+    color: #00ff00;
+}
+
+section {
+    margin-top: 4em;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+/* Paragraphs */
+#references {
+    text-align: center;
+    color: rgb(159, 159, 159);
+    size: 20em;
+}
+
+/* IMGs */
+#gdd {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    width: 50%;
+}
+
+/* Zooming IMGs */
+.zoom {               
+    transition: transform 0.5s;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
+/* In-Page Top Nav Bar */
+    /* Set height of body and the document to 100% to enable "full page tabs" */
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+    
+    /* Style tab links */
+    .tablink {
+        background-color: #555;
+        color: white;
+        float: left;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 1em;
+        font-weight: bold;
+        width: 25%;
+        border: #ff69b4 solid 0.1em;
+    }
+    
+    .tablink:hover {
+        background-color: #777;
+    }
+    
+    /* Style the tab content (and add height:100% for full page content) */
+    .tabcontent {
+        display: none;
+        padding: 1em 1em;
+        height: 100%;
+        background-color: rgba(51, 51, 51, 0.8);
+        border: #ff69b4 solid 0.1em;
+    }
+
+/* Media Queries */
+@media all and ( max-width: 600px ) {
+    #header {
+        max-width: 90%;
+        margin-left: 6%;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .tablink {
+        padding: 5px 6px;
+        font-size: .7em;
+        font-weight: 400;
+        height: 12%;
+    }
+
+    .zoom {               
+        transition: transform 0.5s;
+      }
+      
+      .zoom:hover {
+        -ms-transform: scale(2); /* IE 9 */
+        -webkit-transform: scale(2); /* Safari 3-8 */
+        transform: scale(2);
+    }
+
+    h1 {
+
+        font-size: 2em;
+    }
+
+    h2 {
+
+        font-size: 1.5em;
+    }
+
+    p {
+
+        font-size: 1em;
+    }
+}
+
+@media all and ( min-width: 601px ) and ( max-width: 992px ) {
+    #header {
+        max-width: 90%;
+        margin-left: 6%;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .tablink {
+        padding: 5px 6px;
+        font-size: .8em;
+        font-weight: 500;
+        height: 12%;
+    }
+
+    .zoom {               
+        transition: transform 0.5s;
+      }
+      
+      .zoom:hover {
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.5);
+    }
+
+    h1 {
+
+        font-size: 2em;
+    }
+
+    h2 {
+
+        font-size: 1.5em;
+    }
+
+    p {
+
+        font-size: 1em;
+    }
+}
+
+@media all and (min-width: 993px) and (max-width:1200px) {
+    #header {
+        max-width: 90%;
+        margin-left: 6%;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .tablink {
+        padding: 8px 10px;
+        font-size: 1em;
+        font-weight: 600;
+        height: 12%;
+    }
+
+    .zoom {               
+        transition: transform 0.5s;
+      }
+      
+      .zoom:hover {
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.5);
+    }
+
+    h1 {
+
+        font-size: 3em;
+    }
+
+    h2 {
+
+        font-size: 2.5em;
+    }
+
+    p {
+
+        font-size: 1.4em;
+    }
+}
+
+@media all and (min-width: 1201px) and (max-width:1400px) {
+    #header {
+        max-width: 90%;
+        margin-left: 6%;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .tablink {
+        padding: 8px 10px;
+        font-size: 1em;
+        font-weight: 600;
+        height: 12%;
+    }
+
+    h1 {
+
+        font-size: 3em;
+    }
+
+    h2 {
+
+        font-size: 2.5em;
+    }
+
+    p {
+
+        font-size: 1.4em;
+    }
+    .copy {
+        display: inline-flex;
+        opacity: 70%;
+    }
+}
+
+@media all and (min-width: 1400px){
+    .tablink {
+        padding: 8px 10px;
+        font-size: 1em;
+        font-weight: 600;
+        height: 14%;
+    }
+
+    p {
+
+        font-size: 1.4em;
+    }
 }
