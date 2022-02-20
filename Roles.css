@@ -131,9 +131,12 @@ section {
 @media all and ( max-width: 600px ) {
     #header {
         max-width: 90%;
-        margin-left: 6%;
+        margin-left: -25%;
         margin-top: 1.5em;
         margin-bottom: 1.5em;
+        float: left;
+        padding-right: 10em
+        
     }
 
     .tablink {
@@ -167,12 +170,13 @@ section {
 
         font-size: 1em;
     }
+    
 }
 
 @media all and ( min-width: 601px ) and ( max-width: 992px ) {
     #header {
         max-width: 90%;
-        margin-left: 6%;
+        margin-left: -20%;
         margin-top: 1.5em;
         margin-bottom: 1.5em;
     }
@@ -213,9 +217,11 @@ section {
 @media all and (min-width: 993px) and (max-width:1200px) {
     #header {
         max-width: 90%;
-        margin-left: 6%;
+        margin-left: -10%;
         margin-top: 1.5em;
         margin-bottom: 1.5em;
+        float: left
+        
     }
 
     .tablink {
