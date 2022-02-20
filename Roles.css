@@ -7,12 +7,13 @@ body {
 }
 
 /* Headers */
-#header {
+header {
     max-width: 60%;
     margin-left: 20em;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     opacity: 85%;
+    
 }
 
 h1 {
