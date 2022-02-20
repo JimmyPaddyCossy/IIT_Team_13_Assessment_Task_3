@@ -73,8 +73,8 @@ tr:hover {
     background-color: rgba(0,255,0, 0.2);
 }
 
-tr:nth-last-col {
-    background-color: pink;
+th:nth-child(1), :nth-child(3), :nth-child(4), :nth-child(5) {
+    padding: 3px;
 }
 
 /* Container for text */
