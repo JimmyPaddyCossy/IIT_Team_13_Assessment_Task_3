@@ -7,13 +7,13 @@ body {
 }
 
 /* Headers */
-header {
-    max-width: 60%;
-    margin-left: 40%;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+#header {
+    width: 90%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     opacity: 85%;
-    
 }
 
 h1 {
@@ -129,16 +129,6 @@ section {
 
 /* Media Queries */
 @media all and ( max-width: 600px ) {
-    #header {
-        max-width: 90%;
-        margin-left: -25%;
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
-        float: left;
-        padding-right: 10em
-        
-    }
-
     .tablink {
         padding: 5px 6px;
         font-size: .7em;
@@ -174,13 +164,6 @@ section {
 }
 
 @media all and ( min-width: 601px ) and ( max-width: 992px ) {
-    #header {
-        max-width: 90%;
-        margin-left: -20%;
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
-    }
-
     .tablink {
         padding: 5px 6px;
         font-size: .8em;
@@ -215,15 +198,6 @@ section {
 }
 
 @media all and (min-width: 993px) and (max-width:1200px) {
-    #header {
-        max-width: 90%;
-        margin-left: -10%;
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
-        float: left
-        
-    }
-
     .tablink {
         padding: 8px 10px;
         font-size: 1em;
@@ -258,13 +232,6 @@ section {
 }
 
 @media all and (min-width: 1201px) and (max-width:1400px) {
-    #header {
-        max-width: 90%;
-        margin-left: 6%;
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
-    }
-
     .tablink {
         padding: 8px 10px;
         font-size: 1em;
