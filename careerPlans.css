@@ -141,6 +141,16 @@ th {
         margin-top: 1.5em;
         margin-bottom: 1.5em;
     }
+    .CareerPlans {
+       margin-left: auto;
+       margin-right: auto;
+       font-size: 56%;
+       font-weight: 600;
+       border: none;
+       float: left;
+        margin-left: -30em
+       
+    }
 }
 
 @media all and (min-width: 601px) and (max-width:992px) {
@@ -150,6 +160,10 @@ th {
         margin-left: 20%;
         margin-top: 1.5em;
         margin-bottom: 1.5em;
+    }
+    .CareerPlans {
+        margin-left: -18em;
+        
     }
 
 }
